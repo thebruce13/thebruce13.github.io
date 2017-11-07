@@ -9,12 +9,12 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: date
   label: Date
   type: datetime
-  hidden: false
+  hidden: true
   default: ''
 - type: file
   name: image
