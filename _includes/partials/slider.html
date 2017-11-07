@@ -1,0 +1,21 @@
+<div class="slide-wrapper">
+		<ul class="hero-slick">
+            			<!-- SLIDESHOW IMAGES -->
+			{% for image in page.slide_images %}
+				<li>
+					<img class="lazyload blur-up" src="{{ image|relative_url }}">
+					<!-- FIRST IMAGE FOR NO JS -->
+					<noscript><img src="{{ image }}"></noscript>
+				</li>
+			{% endfor %}
+		</ul>
+	<!-- Don't show on single rooms page, no need to have two booking bars. -->
+	{% if page.url == '/' %}
+	<div class="booking-accordion">
+		<div class="booking-accordion-content">
+		<h3 class="booking-accordion-title">Book Now</h3>
+
+		</div>
+	</div>
+	{% endif %}
+</div>
