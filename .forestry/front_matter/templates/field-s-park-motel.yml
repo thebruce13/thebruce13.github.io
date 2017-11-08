@@ -1,0 +1,21 @@
+---
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: navigation_weight
+  label: Navigation weight
+  type: text
+  hidden: false
+  default: ''
+- type: image_gallery
+  label: SLIDE IMAGES
+  name: slide_images
