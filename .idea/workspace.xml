@@ -13,6 +13,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/specials.html" afterPath="$PROJECT_DIR$/_site/specials.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specials.html" afterPath="$PROJECT_DIR$/specials.html" />
     </list>
@@ -44,8 +45,8 @@
           <file leaf-file-name="rooms.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/rooms.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="8" column="218" lean-forward="true" selection-start-line="8" selection-start-column="218" selection-end-line="8" selection-end-column="218" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="218" lean-forward="false" selection-start-line="8" selection-start-column="218" selection-end-line="8" selection-end-column="218" />
                   <folding />
                 </state>
               </provider>
@@ -69,7 +70,7 @@
             <entry file="file://$PROJECT_DIR$/_layouts/archive-specials.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="570">
-                  <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+                  <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -299,12 +300,12 @@
       <workItem from="1509727710873" duration="10052000" />
       <workItem from="1509976845265" duration="5360000" />
       <workItem from="1510084664359" duration="4145000" />
-      <workItem from="1510169201096" duration="2818000" />
+      <workItem from="1510169201096" duration="2990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22375000" />
+    <option name="totallyTimeSpent" value="22547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1365" extended-state="6" />
@@ -632,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rooms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="8" column="218" lean-forward="true" selection-start-line="8" selection-start-column="218" selection-end-line="8" selection-end-column="218" />
+        <state relative-caret-position="120">
+          <caret line="8" column="218" lean-forward="false" selection-start-line="8" selection-start-column="218" selection-end-line="8" selection-end-column="218" />
           <folding />
         </state>
       </provider>
@@ -649,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/_layouts/archive-specials.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
           <folding />
         </state>
       </provider>
