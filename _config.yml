@@ -24,9 +24,11 @@ logo: img/logo.png
 #Plugins
 plugins:
   - jekyll-minimagick
+  - mini_magick
 
 #Collections
 collections:
+ specials:
  rooms:
   output: true
 

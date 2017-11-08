@@ -140,7 +140,12 @@
 </div>
     </section>
     <div class="content">
-        <div>
+        <div class="row column">
+    <article class="post-type-" id="post-">
+        <section class="article-content">
+            <h1 class="article-h1">Specials</h1>
+            <div class="article-body">
+                <div>
     This is the about me!
 </div>
 <div style="text-align: left; max-width: 500px; margin: 0 auto;">
@@ -150,11 +155,37 @@
             <textarea name="message" placeholder="Your message"></textarea>
             <button type="submit">Send</button>
             <input type="hidden" name="*reply" value="email">
-            <input type="hidden" name="*redirect" value="http://fieldspark.test/specials.html#form-submit" />
+            <input type="hidden" name="*redirect" value="{{page.url|absolute_url}}#form-submit" />
             <input type="hidden" name="*subject" value="New Submission from Contact Us" />
 
         </form>
 </div>
+            </div>
+        </section>
+    </article>
+</div>
+
+
+<div class="row archive-entry">
+    
+    <div class="medium-9 column">
+        <h4 class="text-primary">October & November</h4>
+        <div class="archive-text">
+            <p>Rooms starting at</p>
+<ul>
+  <li>$69.99 per night during weekdays (Sunday - Thursday)</li>
+  <li>$79.99 per night during weekends (Friday - Saturday)</li>
+</ul>
+
+        </div>
+        <div class="archive-button">
+            <a href="/specials/october-november.html ">
+                <div class="button booking-link">Book Now</div>
+            </a>
+        </div>
+    </div>
+</div>
+}
     </div>
 </div>
 <footer class="footer">
