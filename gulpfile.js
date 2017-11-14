@@ -68,7 +68,7 @@ function jekyllbuild(done){
 // Compile Sass into CSS
 // In production, the CSS is compressed
 function sass() {
-    return gulp.src('_src/scss/app.scss')
+    return gulp.src('assets/_scss/app.scss')
         .pipe($.sourcemaps.init())
         .pipe($.sass({
             includePaths: PATHS.sass
@@ -82,7 +82,7 @@ function sass() {
             autoprefixer: { browsers: COMPATIBILITY, add: true }
         })))
         .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(browser.stream());
 }
 
@@ -96,13 +96,13 @@ function javascript() {
         .pipe($.if(PRODUCTION, $.uglify()
             .on('error', function(e) { console.log(e) })))
         .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-        .pipe(gulp.dest('js'));
+        .pipe(gulp.dest('assets/js'));
 }
 
 // Convert folder of individual SVGs into an SVG sprite.
 function svg() {
     return gulp
-        .src('_src/svg/*.svg')
+        .src('assets/_svg/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
