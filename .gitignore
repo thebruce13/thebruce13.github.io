@@ -1,1 +1,10 @@
-node_modules
+.DS_STORE
+/node_modules
+
+# PHPStorm settings
+.idea/*
+
+# Ignore everything except the files needed to generate the SVGs.
+/_src/font-awesome/*
+!/_src/font-awesome/fontawesome-webfont.svg
+!/_src/font-awesome/icons.yml
