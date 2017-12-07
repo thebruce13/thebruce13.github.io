@@ -23,7 +23,7 @@ logo: img/logo.png
 
 #Plugins
 plugins:
-  - jekyll-minimagick
+  - jekyll-menus
   - mini_magick
 
 #Collections
@@ -43,13 +43,17 @@ exclude:
    - gulpfile.js
    - package.json
 
-mini_magick:
-    home_slide:
-        source: _sliders/home
-        destination: img/sliders/home
-        resize: "1800x400^"
-        gravity: "center"
-        extent: "1800x400"
+
+# Set presets for image-tag plugin
+image:
+  output: generated
+  presets:
+    homeslides:
+      width: 1800
+      height: 500
+    subslides:
+      width: 1800
+      height: 400
 
 
 #
