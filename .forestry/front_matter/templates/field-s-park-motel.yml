@@ -16,6 +16,3 @@ fields:
   type: text
   hidden: false
   default: ''
-- type: image_gallery
-  name: slide_images
-  label: SLIDE IMAGES
