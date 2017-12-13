@@ -19,3 +19,6 @@ fields:
 - type: image_gallery
   name: slide_images
   label: SLIDE IMAGES
+  default:
+  - "/_sliders/home/Subpage-1-1.jpg"
+  - "/_sliders/home/main_slider.jpg"
