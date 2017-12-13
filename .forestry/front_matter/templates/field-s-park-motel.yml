@@ -16,9 +16,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- type: image_gallery
+- type: file
   name: slide_images
   label: SLIDE IMAGES
-  default:
-  - "/_sliders/home/Subpage-1-1.jpg"
-  - "/_sliders/home/main_slider.jpg"
