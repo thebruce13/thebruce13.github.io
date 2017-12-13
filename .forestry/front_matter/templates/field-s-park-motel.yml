@@ -17,5 +17,5 @@ fields:
   hidden: false
   default: ''
 - type: image_gallery
-  label: SLIDE IMAGES
   name: slide_images
+  label: SLIDE IMAGES
