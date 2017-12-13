@@ -1,0 +1,12 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: navigation_weight
+  label: Navigation Weight
+- type: image_gallery
+  name: slide_images
+  label: SLIDE IMAGES
