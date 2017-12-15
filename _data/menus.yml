@@ -1,18 +1,23 @@
 ---
 header:
- - url: /
-   title: Home
-   identifier: home
- - url: rooms.html
-   title: Rooms
-   identifier: rooms
- - url: specials.html
-   title: Specials
-   identifer: specials
- - url: amenities.html
-   title: Amenities
-   identifier: amenities
- - url: contact-location.html
-   title: Contact
-   identifier: contact
----
+- identifier: contact
+  url: contact-location.html
+  weight: -1
+  title: Contact
+- identifier: amenities
+  url: amenities.html
+  weight: -1
+  title: Amenities
+- identifier: 
+  url: specials.html
+  weight: -1
+  identifer: specials
+  title: Specials
+- identifier: rooms
+  url: rooms.html
+  weight: -1
+  title: Rooms
+- identifier: home
+  url: "/"
+  weight: -1
+  title: Home
