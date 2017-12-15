@@ -23,7 +23,7 @@ logo: /img/logo.png
 
 #Plugins
 plugins:
-  - _image_tag
+  - image_tag
 
 #Collections
 collections:
