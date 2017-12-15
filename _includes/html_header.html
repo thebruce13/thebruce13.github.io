@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{page.title}} - Fields Park Motel</title>
+    {% if page.metatitle %}
+        <title>{{ page.metatitle }}</title>
+    {# elsif page.url == "/" %}
+        <title>{{ site.title }}</title>
+    {% else %}
+        <title>{{ page.title }} - {{ site.title }}</title>
+    {% endif %}
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
 </head>
