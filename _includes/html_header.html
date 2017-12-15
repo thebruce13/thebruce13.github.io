@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     {% if page.metatitle %}
         <title>{{ page.metatitle }}</title>
-    {# elsif page.url == "/" %}
+    {% elsif page.url == "/" %}
         <title>{{ site.title }}</title>
     {% else %}
         <title>{{ page.title }} - {{ site.title }}</title>
