@@ -1,0 +1,52 @@
+<div class="booking-bar">
+    <form id='resblock' class='resblock row' action='http://www.innline.com/lodgical/sqlcpgetunittype.asp'
+          method='get'>
+        <div class="row medium-up-2 {{ large }}">
+            <input type='hidden' name='propertyId' value='6100'/>
+            <input type='hidden' name='findIt' value='on'/>
+
+            <div class="column">
+                <label>Check-In<br>
+                    <input  type='text' id='arriveDt' name='arriveDt' value="" required/>
+                </label>
+            </div>
+            <div class="column">
+                <label>Check-Out<br>
+                    <input  type='text' id='departDt' name='departDt' value="" required/>
+                </label>
+            </div>
+            <div class="column">
+                <label>Adults<br>
+                    <select name='adult'>
+                        <option value='1' selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="column">
+                <label>Children<span style='font-size:10px;'>(Ages 4-18)</span><br>
+                <select name='children'>
+                    <option value='0' selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                </label>
+            </div>
+            <div class="text-center">
+                <button class="button booking-link " type="submit" form="resblock" value="Submit">Book Now</button>
+            </div>
+        </div>
+    </form>
+</div>

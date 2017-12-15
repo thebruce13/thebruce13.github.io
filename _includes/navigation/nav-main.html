@@ -1,0 +1,19 @@
+<nav class="nav-main show-for-large">
+    {% if menu %}
+    <ul class="dropdown menu" data-dropdown-menu>
+        {% for item in menu %}
+        <li class="{{ item.classes | join(' ') }} {{ item.get_children ? 'is-dropdown-submenu-parent' }}">
+            <a href="{{ item.url }}" {% if item.url== page.url %}class="active" {% endif %}>
+                {{ item.title }}
+            </a>
+
+            <!-- Get child menu items. -->
+            {% if item.children %}
+                {% assign menu = item.children %}
+                {% include navigation/nav-main.html %}
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</nav>

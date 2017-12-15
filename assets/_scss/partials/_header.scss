@@ -1,0 +1,27 @@
+.header-logo {
+  @include cinzel;
+  margin-top: 0.5rem;
+
+  img {
+    width: 138px;
+    margin: 0 auto;
+  }
+
+  a {
+    font-size: 1.6rem;
+    color: black;
+  }
+
+  @include breakpoint(medium){
+    margin-bottom: -1.5rem;
+  }
+}
+
+.hero{
+  margin-bottom: 2rem;
+}
+
+.orbit{
+  border-top: 8px solid $primary-color;
+  border-bottom: 8px solid $primary-color;
+}

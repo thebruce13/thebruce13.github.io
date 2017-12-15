@@ -1,0 +1,41 @@
+/// Helper to get padding-bottom percentage for intrinsic ration based
+/// on a width & height.
+/// @link https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+/// @param {Length} $width
+/// @param {Length} $height
+@mixin intrinsic-ratio( $width, $height ) {
+  padding-bottom: ( $height / $width ) * 100%;
+}
+
+///
+/// Adds "Open Sans" font to a selector after font is loaded.
+///
+@mixin opensans() {
+  font-family: $body-font-family;
+
+  .wf-active &,
+  .mce-content-body & {
+    @include breakpoint(medium) {
+      font-family: 'Open Sans', $body-font-family;
+    }
+  }
+}
+
+///
+/// Adds "Cinzel" font to a selector after font is loaded.
+///
+@mixin cinzel() {
+  font-variant: small-caps;
+  font-family: $header-font-family;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+
+  .wf-active &,
+  .mce-content-body & {
+    @include breakpoint(medium){
+      font-family: Cinzel, $header-font-family;
+      letter-spacing: initial;
+      font-weight: 700;
+    }
+  }
+}

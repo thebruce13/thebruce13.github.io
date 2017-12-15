@@ -1,0 +1,61 @@
+.flex-slick{
+  padding: 3rem 0 ;
+}
+
+.flex-slick .slick-track{
+  display: flex;
+  align-items: stretch;
+  padding: 1rem 0;
+
+  .no-flexbox &{
+    display: block;
+  }
+}
+
+.flex-slick.slick-initialized .slick-slide {
+  @include disable-mouse-outline;
+  display: flex;
+  height: auto;
+
+  .no-flexbox &{
+    display: block;
+    width: auto;
+  }
+}
+
+.card{
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
+  .no-flexbox &{
+    display: block;
+    width: 80%;
+  }
+}
+
+.card-content{
+  padding: 0.5rem;
+  flex-grow: 1;
+}
+
+.card-button{
+  @include cinzel();
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  background-color: $primary-color;
+  transition: background-color 0.2s;
+
+  &:hover{
+    background-color: mix($white, $primary-color, 50%)
+  }
+
+  a{
+    color: $white;
+    display: block;
+  }
+}

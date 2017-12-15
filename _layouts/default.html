@@ -1,0 +1,34 @@
+{% include html_header.html %}
+<div class="show-for-sr">{% include svg/svg.svg %}</div>
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- OFF CANVAS MENU -->
+    {% include navigation/nav-off-canvas.html %}
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+    <!-- TOP BAR -->
+    {% include navigation/nav-top-bar.html %}
+    <header class="header">
+        <div class="header-logo text-center">
+            <a href="{{ site.url }}">
+                <img src="{{ site.logo }}" width="138" height="138" alt="{{ site.title }}"><br>
+                Field's Park Motel
+            </a>
+        </div>
+
+            <!-- Navigaion -->
+        {% comment %}
+            Assign the menu variable to what is defined by the jekyll-menu plugin.
+            @link https://github.com/forestryio/jekyll-menus#recursive-menus
+        {% endcomment %}
+
+            {% assign menu = site.menus.header %}
+            {% include navigation/nav-main.html %}
+    </header>
+    <section class="hero">
+        {% include partials/slider.html %}
+    </section>
+    <div class="content">
+        {{ content }}
+    </div>
+</div>
+{%include footer.html %}

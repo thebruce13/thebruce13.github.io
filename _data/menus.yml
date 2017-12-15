@@ -1,0 +1,18 @@
+---
+header:
+ - url: /
+   title: Home
+   identifier: home
+ - url: rooms.html
+   title: Rooms
+   identifier: rooms
+ - url: specials.html
+   title: Specials
+   identifer: specials
+ - url: amenities.html
+   title: Amenities
+   identifier: amenities
+ - url: contact-location.html
+   title: Contact
+   identifier: contact
+---

@@ -1,0 +1,68 @@
+.booking-bar{
+  padding: 0 1rem;
+}
+
+.pikaday__container{
+  width: 100%;
+}
+
+
+input[readonly].pikaday__display{
+  background-color: $white;
+}
+
+.slide-wrapper {
+  @include breakpoint(large){
+  position: relative;
+  }
+}
+
+.booking-accordion {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  width: 100%;
+  max-width: 1200px;
+  @include breakpoint(large) {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+
+.booking-accordion-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $primary-color;
+  transition: all 0.2s;
+
+  @include breakpoint(large){
+    width: 350px;
+  }
+}
+
+.booking-accordion-content:hover{
+  background-color: mix($white, $primary-color, 50%);
+
+  & .booking-accordion-title{
+    background-color: mix($white, $primary-color, 50%);
+
+  }
+}
+
+.booking-accordion-title{
+  background-color: $primary-color;
+  color: $white;
+  text-align: center;
+  border: 2px solid $white;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.booking-accordion-content .booking-bar{
+  background: $light-gray;
+  display: none;
+}

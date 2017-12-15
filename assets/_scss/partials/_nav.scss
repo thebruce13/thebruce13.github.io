@@ -1,0 +1,43 @@
+/**
+ * Off canvas nav
+ */
+// Make off canvas nav the full height
+.off-canvas {
+  height: 100%;
+  background: $primary-color;
+}
+
+nav.nav-main {
+  background: $primary-color;
+  padding: 0.5rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto 0;
+
+  li {
+    text-align: center;
+
+  }
+  a {
+    @include cinzel();
+    font-size: 1.6rem;
+    color: white;
+
+    &:hover {
+      color: mix($white, $primary-color, 50%)
+    }
+  }
+
+  @include breakpoint(medium) {
+    position: relative;
+    top: 1.5rem;
+    z-index: 5;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
