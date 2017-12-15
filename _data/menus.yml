@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 header:
 - identifier: home
@@ -8,3 +9,6 @@ footer:
 - url: "/"
   title: Home
 ---
+=======
+--- {}
+>>>>>>> a046f47b2bf400ee491d91032d137203c76d3b8e
