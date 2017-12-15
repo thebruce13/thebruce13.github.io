@@ -1,1 +1,10 @@
---- {}
+---
+header:
+- identifier: home
+  url: "/"
+  weight: 1
+  title: Home
+footer:
+- url: "/"
+  title: Home
+---
