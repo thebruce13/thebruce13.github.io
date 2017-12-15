@@ -1,13 +1,21 @@
 <<<<<<< HEAD
 ---
+footer:
+- identifier: 
+  url: "/"
+  weight: -1
+  title: Home
 header:
 - identifier: home
   url: "/"
   weight: 1
   title: Home
+<<<<<<< HEAD
 footer:
 - url: "/"
   title: Home
 =======
 --- {}
 >>>>>>> d7bf18d0451b7e888bd809f170aa377cea2c2cbe
+=======
+>>>>>>> 42d46c776a6c19e676cad90a434e2fbd0436c2e0
