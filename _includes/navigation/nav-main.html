@@ -1,19 +1,24 @@
-<nav class="nav-main show-for-large">
-    {% if menu %}
-    <ul class="dropdown menu" data-dropdown-menu>
-        {% for item in menu %}
-        <li class="{{ item.classes | join(' ') }} {{ item.get_children ? 'is-dropdown-submenu-parent' }}">
-            <a href="{{ item.url }}" {% if item.url== page.url %}class="active" {% endif %}>
-                {{ item.title }}
-            </a>
+{% if menu %}
+    {% if mobile-nav %}
+        <nav class="nav-off-canvas" role="navigation">
+        <ul class="vertical menu">
+    {% else %}
+        <nav class="nav-main show-for-large">
+        <ul class="dropdown menu" data-dropdown-menu>
+    {% endif %}
+            {% for item in menu %}
+            <li class="{{ item.classes | join(' ') }} {{ item.get_children ? 'is-dropdown-submenu-parent' }}">
+                <a href="{{ item.url }}" {% if item.url== page.url %}class="active" {% endif %}>
+                    {{ item.title }}
+                </a>
 
-            <!-- Get child menu items. -->
-            {% if item.children %}
+                <!-- Get child menu items. -->
+                {% if item.children %}
                 {% assign menu = item.children %}
                 {% include navigation/nav-main.html %}
-            {% endif %}
-        </li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-</nav>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}
