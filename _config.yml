@@ -24,7 +24,7 @@ permalink: /:slug/
 
 #Plugins
 plugins:
-  - image_tag
+  - _image_tag
 
 #Collections
 collections:
