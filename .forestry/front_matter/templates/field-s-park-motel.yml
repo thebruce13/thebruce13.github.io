@@ -1,6 +1,4 @@
 ---
-pages:
-- index.html
 hide_body: false
 fields:
 - name: title
