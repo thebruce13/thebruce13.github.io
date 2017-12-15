@@ -23,7 +23,8 @@ logo: /img/logo.png
 
 #Plugins
 plugins:
-  - image_tag
+  - jekyll-menus
+  - mini_magick
 
 #Collections
 collections:
