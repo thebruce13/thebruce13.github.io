@@ -24,8 +24,7 @@ permalink: /:slug/
 
 #Plugins
 plugins:
-  - jekyll-menus
-  - mini_magick
+  - img_tag
 
 #Collections
 collections:
