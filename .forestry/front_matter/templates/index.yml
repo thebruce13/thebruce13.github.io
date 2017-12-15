@@ -12,3 +12,6 @@ fields:
 - type: image_gallery
   name: slide_images
   label: SLIDE IMAGES
+- type: text
+  name: metatitle
+  label: Metatitle
