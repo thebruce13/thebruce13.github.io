@@ -1,4 +1,11 @@
 {% include html_header.html %}
+
+{% comment %}
+    Assign the menu variable to what is defined by the jekyll-menu plugin.
+    @link https://github.com/forestryio/jekyll-menus#recursive-menus
+{% endcomment %}
+{% assign menu = site.menus.header %}
+
 <div class="show-for-sr">{% include svg/svg.svg %}</div>
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
     <!-- OFF CANVAS MENU -->
@@ -15,8 +22,8 @@
             </a>
         </div>
 
-            <!-- Navigaion -->
-            {% include navigation/nav-main.html %}
+        <!-- Navigaion -->
+        {% include navigation/nav-main.html %}
     </header>
     <section class="hero">
         {% include partials/slider.html %}
