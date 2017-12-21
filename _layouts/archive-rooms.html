@@ -12,7 +12,8 @@ layout: default
     </article>
 </div>
 
-{% for room in site.rooms %}
+{% assign rooms = site.rooms | sort : 'position' %}
+{% for room in rooms %}
 <div class="row archive-entry">
     {% if room.image %}
     <div class="medium-3 column">

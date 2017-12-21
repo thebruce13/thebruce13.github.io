@@ -18,8 +18,8 @@ phone: (800) 453-4353
 description: >- # this means to ignore newlines until "baseurl:"
  The Park Motel is situated in the River District of Downtown Wisconsin Dells. A great value vacation combination!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thebruce13.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-logo: /img/logo.png
+url: "http://fieldspark.test" # the base hostname & protocol for your site, e.g. http://example.com
+logo: img/logo.png
 
 #Plugins
 plugins:
@@ -55,6 +55,7 @@ image:
       width: 1800
       height: 400
 
+# Set filename for the jekyll-sitemap plugin.
 sitemap:
   filename: "/sitemap.xml"
 

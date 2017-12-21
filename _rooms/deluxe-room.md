@@ -1,7 +1,7 @@
 ---
 title: Deluxe Room
 layout: single-room
-image: "/img/deluxe-room-279x214-c-default.jpg"
-date: 2017-12-14 16:26:06 +0000
+image: /img/deluxe-room-279x214-c-default.jpg
+position: 1
 ---
 Our Deluxe Rooms are spacious and are located by the outside pool. They have 2 Queen Beds, sofa sleeper/or futons, refrigerator and microwave. Max occupancy is 6 people.

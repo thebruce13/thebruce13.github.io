@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    {% if page.metatitle %}
-        <title>{{ page.metatitle }}</title>
-    {% elsif page.url == "/" %}
-        <title>{{ site.title }}</title>
-    {% else %}
-        <title>{{ page.title }} - {{ site.title }}</title>
-    {% endif %}
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+    <link rel="icon" href="{% image 32x32 {{site.logo}} %}" sizes="32x32" />
+    <link rel="icon" href="{% image 192x192 {{site.logo}} %}" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="{% image 180x180 {{site.logo}} %}" />
+    <meta name="msapplication-TileImage" content="{% image 270x270 {{site.logo}} %}" />
 </head>
 <body>

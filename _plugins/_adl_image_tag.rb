@@ -22,11 +22,13 @@ require 'mini_magick'
 module Jekyll
 
   class Image < Liquid::Tag
-
     def initialize(tag_name, markup, tokens)
       @markup = markup
       super
     end
+
+    # Create the found images global variable to later prevent duplicate 'Found' messages
+    $found_images = Array.new;
 
     def render(context)
 
@@ -115,7 +117,8 @@ module Jekyll
 
       image = MiniMagick::Image.open(image_source_path)
       image.coalesce
-      digest = Digest::MD5.hexdigest(image.to_blob).slice!(0..5)
+      digest = Digest::MD5.file image_source_path
+      digest = digest.hexdigest.slice!(0..5)
 
       image_dir = File.dirname(instance[:src])
       ext = File.extname(instance[:src])
@@ -155,14 +158,14 @@ module Jekyll
       gen_dest_dir = File.join(site_dest, image_dest, image_dir)
       gen_dest_file = File.join(gen_dest_dir, gen_name)
 
-      # Generate resized files
-#      unless File.exists?(gen_dest_file)
-
+      # Generate resized files unless it already exists. 
+     unless File.exists?(gen_dest_file)
         #  If the destination directory doesn't exist, create it
         FileUtils.mkdir_p(gen_dest_dir) unless File.exist?(gen_dest_dir)
 
-        # Let people know their images are being generated
-        puts "Generating #{gen_name}"
+        # Let people know their images are being generated     
+        puts "Generating #{gen_name}" 
+        
 
         # Scale and crop
         image.combine_options do |i|
@@ -174,7 +177,7 @@ module Jekyll
         end
 
         image.write gen_dest_file
-#      end
+     end
 
       # Return path relative to the site root for html
       Pathname.new(File.join('/', image_dest, image_dir, gen_name)).cleanpath
