@@ -1,19 +1,19 @@
 {
-  "Address": {
-    "Street": "",
-    "City": "",
-    "State": "",
-    "Zip": ""
-  },
-  "Phone": "555-555-5555",
-  "Social Media": {
-    "Facebook": "http://www.google.com",
-    "Twitter": "",
-    "You Tube": "",
-    "Instagram": "",
-    "Trip Advisor": "",
-    "Pinterest": "",
-    "Yelp": "",
-    "Google Plus": ""
-  }
+    "Address": {
+        "Street": "",
+        "City": "",
+        "State": "",
+        "Zip": ""
+    },
+    "Phone": "555-555-5555",
+    "Social Media": {
+        "Facebook": "http://www.google.com",
+        "Twitter": "",
+        "You Tube": "",
+        "Instagram": "",
+        "Trip Advisor": "",
+        "Pinterest": "",
+        "Yelp": "",
+        "Google Plus": ""
+    }
 }
