@@ -128,7 +128,7 @@ function svg() {
  * - icons.yml from: https://github.com/FortAwesome/Font-Awesome/tree/master/src
  */
 function fontAwesome(done) {
-    var ymlFile = fs.readFileSync('_src/font-awesome/icons.yml', 'utf8');
+    var ymlFile = fs.readFileSync('assets/_font-awesome/icons.yml', 'utf8');
     var iconNamingConventions = yaml.load(ymlFile).icons;
 
     var convertFilenames = {};
@@ -136,7 +136,7 @@ function fontAwesome(done) {
         convertFilenames[icon.unicode] = icon.id;
     });
 
-    fontBlast('_src/font-awesome/fontawesome-webfont.svg', '_src/font-awesome', {
+    fontBlast('assets/_font-awesome/fontawesome-webfont.svg', 'assets/_font-awesome', {
         filenames: convertFilenames
     });
     done();
@@ -154,9 +154,9 @@ function server(done) {
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
-    gulp.watch('_src/scss/**/*.scss').on('all', gulp.series(sass, jekyllbuild));
-    gulp.watch('_src/svg/*.svg').on('all', gulp.series(svg, jekyllbuild));
-    gulp.watch('_src/js/**/*.js').on('all', gulp.series(javascript, jekyllbuild));
+    gulp.watch('assets/_scss/**/*.scss').on('all', gulp.series(sass, jekyllbuild));
+    gulp.watch('assets/_svg/*.svg').on('all', gulp.series(svg, jekyllbuild));
+    gulp.watch('assets/_js/**/*.js').on('all', gulp.series(javascript, jekyllbuild));
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/**/*.html']).on('all', gulp.series(jekyllbuild));
     gulp.watch('_site/*').on('all', gulp.series(browser.reload));
 }
