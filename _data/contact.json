@@ -1,12 +1,19 @@
 {
-    "address": {
-        "street": "",
-        "city": "",
-        "state": "",
-        "zip": ""
+    "Address": {
+        "Street": "",
+        "City": "",
+        "State": "",
+        "Zip": ""
     },
-    "phone": "555-555-5555",
-    "social": {
-        "facebook": "http://www.google.com"
+    "Phone": "555-555-5555",
+    "Social Media": {
+        "Facebook": "http://www.google.com",
+        "Twitter": "",
+        "You Tube": "",
+        "Instagram": "",
+        "Trip Advisor": "",
+        "Pinterest": "",
+        "Yelp": "",
+        "Google Plus": ""
     }
 }
