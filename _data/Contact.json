@@ -1,9 +1,22 @@
-{
-  "address": {
-    "street": "",
-    "city": "",
-    "state": "",
-    "zip": ""
+[
+  {
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    },
+    "phone": "555-555-5555"
   },
-  "phone": "555-555-5555"
-}
+  {
+    "facebook": "www.google.com",
+    "twitter": "www.google.com",
+    "yelp": "www.google.com",
+    "youtube": "www.google.com",
+    "vimeo": "",
+    "instagram": "www.google.com",
+    "trip_advisor": "",
+    "pinterest": "",
+    "google_plus": ""
+  }
+]
