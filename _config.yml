@@ -21,13 +21,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://fieldspark.test" # the base hostname & protocol for your site, e.g. http://example.com
 logo: img/logo.png
 
-- params:
-    address:
-      street: ""
-      city: ""
-      state: ""
-      zip: ""
-    phone: 555-555-5555
+params:
+  address:
+    street: ""
+    city: ""
+    state: ""
+    zip: ""
+  phone: 555-555-5555
 
 #Plugins
 plugins:
