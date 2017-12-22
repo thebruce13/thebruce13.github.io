@@ -3,6 +3,7 @@ address:
  - city: Hanton
  - state: Maiu
  - zip: 49302
+ - test: asdf
 phone: 555-555-5555
 social:
  - name: facebook
@@ -10,4 +11,4 @@ social:
    url: http://www.google.com
 - name: twitter
    icon: twitter
-   url: http://www.google.com
+   url: http://www.google.comg
