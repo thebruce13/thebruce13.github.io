@@ -1,12 +1,9 @@
 {
-  "Address": {
       "Street": "",
       "City": "",
       "State": "",
-      "Zip": ""
-  },
+      "Zip": "",
   "Phone": "555-555-5555",
-  "Social Media": {
       "facebook": {
           "url": "http://www.google.com",
           "icon": "facebook"
@@ -15,5 +12,4 @@
           "url": "http://www.google.com",
           "icon": "twitter"
       }
-  }
 }
