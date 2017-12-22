@@ -1,19 +1,21 @@
 {
-    "address": {
-        "street": "",
-        "city": "",
-        "state": "",
-        "zip": ""
-    },
-    "phone": "555-555-5555",
-    "social": [{
-        "facebook" : {
-            "icon" : "1",
-            "url" : "google.com"
-        },
-        "twitter" : {
-            "icon" : "1",
-            "url" : "google.com"
-        }
-    }]
+  "address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "zip": ""
+  },
+  "phone": "555-555-5555",
+  "social": [
+    {
+      "facebook": {
+        "icon": 1,
+        "url": "google.com"
+      },
+      "twitter": {
+        "icon": 1,
+        "url": "google.com"
+      }
+    }
+  ]
 }
