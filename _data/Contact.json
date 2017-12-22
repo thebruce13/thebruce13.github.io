@@ -1,9 +1,9 @@
 {
-    "address": {
-        "street": "",
-        "city": "",
-        "state": "",
-        "zip": ""
-    },
-    "phone": "555-555-5555"
+  "address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "zip": ""
+  },
+  "phone": "555-555-5555"
 }
