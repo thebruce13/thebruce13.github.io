@@ -1,15 +1,15 @@
 {
-      "Street": "",
-      "City": "",
-      "State": "",
-      "Zip": "",
+  "Street": "",
+  "City": "",
+  "State": "",
+  "Zip": "",
   "Phone": "555-555-5555",
-      "facebook": {
-          "url": "http://www.google.com",
-          "icon": "facebook"
-      },
-      "twitter": {
-          "url": "http://www.google.com",
-          "icon": "twitter"
-      }
+  "facebook": {
+    "url": "http://www.google.com",
+    "icon": "facebook"
+  },
+  "twitter": {
+    "url": "http://www.google.com",
+    "icon": "twitter"
+  }
 }
