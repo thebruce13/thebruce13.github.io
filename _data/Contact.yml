@@ -1,4 +1,3 @@
----
 address:
   street: 232 Sleeve St.
   city: Hanton
@@ -7,9 +6,9 @@ address:
   test: asdf
 phone: 555-555-5555
 social:
-- name: facebook
-  icon: facebook
-  url: http://www.google.com
-- name: twitter
-  icon: twitter
-  url: http://www.google.comg
+  - facebook:
+    icon: facebook
+    url: http://www.google.com
+  - twitter:
+    icon: twitter
+    url: http://www.google.comg
