@@ -1,19 +1,19 @@
 {
-    "Address": {
-        "Street": "",
-        "City": "",
-        "State": "",
-        "Zip": ""
-    },
-    "Phone": "555-555-5555",
-    "Social Media": {
-        "facebook": {
-            "url": "http://www.google.com",
-            "icon": "facebook"
-        },
-        "twitter": {
-            "url": "http://www.google.com",
-            "icon": "twitter"
-        }
-    }
+  "Address": {
+      "Street": "",
+      "City": "",
+      "State": "",
+      "Zip": ""
+  },
+  "Phone": "555-555-5555",
+  "Social Media": {
+      "facebook": {
+          "url": "http://www.google.com",
+          "icon": "facebook"
+      },
+      "twitter": {
+          "url": "http://www.google.com",
+          "icon": "twitter"
+      }
+  }
 }
