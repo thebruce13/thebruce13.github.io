@@ -1,14 +1,14 @@
-address:
- - street: 232 Sleeve St.
- - city: Hanton
- - state: Maiu
- - zip: 49302
- - test: asdf
-phone: 555-555-5555
-social:
- - name: facebook
-   icon: facebook
-   url: http://www.google.com
-- name: twitter
-   icon: twitter
-   url: http://www.google.comg
+- address:
+  street: 232 Sleeve St.
+  city: Hanton
+  state: Maiu
+  zip: 49302
+  test: asdf
+- phone: 555-555-5555
+- social:
+  - name: facebook
+    icon: facebook
+    url: http://www.google.com
+  - name: twitter
+    icon: twitter
+    url: http://www.google.comg
