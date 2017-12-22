@@ -7,13 +7,13 @@
     },
     "Phone": "555-555-5555",
     "Social Media": {
-        "facebook": ["http://www.google.com","facebook"],
-        "Twitter": ["","twitter"],
-        "You Tube": ["","youtube"],
-        "Instagram": ["","instagram"],
-        "Trip Advisor": ["","tripadvisor"],
-        "Pinterest": ["","pinterest"],
-        "Yelp": ["","yelp"],
-        "Google Plus": ["","googleplus"]
+        "facebook": {
+            "url": "http://www.google.com",
+            "icon": "facebook"
+        },
+        "twitter": {
+            "url": "http://www.google.com",
+            "icon": "twitter"
+        }
     }
 }
