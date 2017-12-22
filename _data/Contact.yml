@@ -1,9 +1,9 @@
 address:
-  - street: 232 Sleeve St.
-  - city: Hanton
-  - state: Maiu
-  - zip: 49302
-  - test: asdf
+  street: 232 Sleeve St.
+  city: Hanton
+  state: Maiu
+  zip: 49302
+  test: asdf
 phone: 555-555-5555
 social:
   - name: facebook
