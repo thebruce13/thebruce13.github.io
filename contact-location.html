@@ -8,3 +8,15 @@ menu:
     weight: 5
     title: Contact
 ---
+<div style="text-align: left; max-width: 500px; margin: 0 auto;">
+  Email me
+      <form method="POST" action="https://www.enformed.io/e9uuwcns">
+          <input type="email" name="email" placeholder="Your email">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+          <input type="hidden" name="*reply" value="email">
+          <input type="hidden" name="*redirect" value="{{page.url|absolute_url}}#form-submit" />
+          <input type="hidden" name="*subject" value="New Submission from Contact Us" />
+
+      </form>
+</div>
