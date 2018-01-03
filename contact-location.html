@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Field's Park Motel</title>
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
     <link rel="icon" href="/generated/img/logo-32x32-707cc9.png" sizes="32x32" />
     <link rel="icon" href="/generated/img/logo-192x192-707cc9.png" sizes="192x192" />
@@ -88,7 +88,7 @@
     <header class="header">
         <div class="header-logo text-center">
             <a href="http://fieldspark.test">
-                <img src="img/logo.png" width="138" height="138" alt="Field's Park Motel"><br>
+                <img src="http://fieldspark.test/img/logo.png" width="138" height="138" alt="Field's Park Motel"><br>
                 Field's Park Motel
             </a>
         </div>
@@ -156,7 +156,18 @@
 </div>
     </section>
     <div class="content">
-        
+        <div style="text-align: left; max-width: 500px; margin: 0 auto;">
+  Email me
+      <form method="POST" action="https://www.enformed.io/e9uuwcns">
+          <input type="email" name="email" placeholder="Your email">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+          <input type="hidden" name="*reply" value="email">
+          <input type="hidden" name="*redirect" value="http://fieldspark.test/contact-location.html#form-submit" />
+          <input type="hidden" name="*subject" value="New Submission from Contact Us" />
+
+      </form>
+</div>
     </div>
 </div>
 <footer class="footer">
@@ -165,6 +176,6 @@
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
 </html>
