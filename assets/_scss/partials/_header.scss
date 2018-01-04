@@ -25,3 +25,7 @@
   border-top: 8px solid $primary-color;
   border-bottom: 8px solid $primary-color;
 }
+
+.hero-slick > li:nth-child(n+1){
+  display: none;
+}
