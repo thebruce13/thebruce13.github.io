@@ -11,7 +11,7 @@ Then "split" the social url that is provided to create another array and concato
 	{% assign social_site = item[0] %}
 	{% assign social_url = item[1] %}
 	{% if social_url != "" %}
-		{% assign social_url_single = social_url | split: '*'  %}
+		{% assign social_url_single = social_url | split: 'fake_split_to_create_a_fake_array'  %}
 		{% assign social_array = social_array | concat: social_url_single %}
 	{% endif %}
 {% endfor %}
