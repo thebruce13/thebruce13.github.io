@@ -119,7 +119,7 @@ PATHS:
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.interchange.js"
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.magellan.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.js"
-#    - "node_modules/foundation-sites/dist/js/plugins/foundation.orbit.js"
+    - "node_modules/foundation-sites/dist/js/plugins/foundation.orbit.js"
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.js"
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveToggle.js"
