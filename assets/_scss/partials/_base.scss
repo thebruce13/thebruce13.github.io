@@ -19,16 +19,20 @@
   position: relative;
   height: 0;
 
-  &.hero {
-    @include intrinsic-ratio(1600, 550);
+  &.hero,
+  &.large_slider{
+    @include intrinsic-ratio(1800, 500);
   }
 
-  &.sub-page {
-    @include intrinsic-ratio(1600, 450);
+  &.sub-page,
+  &.medium_slider {
+    @include intrinsic-ratio(1800, 400);
   }
 
   img,
-  iframe {
+  iframe,
+  .orbit-container,
+  .orbit-slide {
     position: absolute;
     width: 100%;
     height: 100%;
