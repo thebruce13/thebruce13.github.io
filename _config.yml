@@ -50,10 +50,10 @@ exclude:
 image:
   output: generated
   presets:
-    homeslides:
+    large_slider:
       width: 1800
       height: 500
-    subslides:
+    medium_slider:
       width: 1800
       height: 400
 
@@ -121,7 +121,7 @@ PATHS:
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.interchange.js"
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.magellan.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.js"
-#    - "node_modules/foundation-sites/dist/js/plugins/foundation.orbit.js"
+    - "node_modules/foundation-sites/dist/js/plugins/foundation.orbit.js"
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.js"
 #    - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveToggle.js"
