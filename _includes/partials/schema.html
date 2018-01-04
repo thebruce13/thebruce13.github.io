@@ -1,23 +1,6 @@
-{% comment %} Schema information: http://www.whitespark.ca/blog/post/62-the-json-ld-markup-guide-to-local-business-schema {% endcomment %}
-
-{% comment %}
-Had to remove empty entries in from the contact.json.
-First had to create an empty array by using the split command.
-Then "split" the social url that is provided to create another array and concatonate that into the original.
+{% comment %} 
+Schema information: http://www.whitespark.ca/blog/post/62-the-json-ld-markup-guide-to-local-business-schema
 {% endcomment %}
-
-{% assign social_array = '' | split: '' %}
-{% for item in site.data.contact['Social Media'] %}
-	{% assign social_site = item[0] %}
-	{% assign social_url = item[1] %}
-	{% if social_url != "" %}
-		{% assign social_url_single = social_url | split: 'fake_split_to_create_a_fake_array'  %}
-		{% assign social_array = social_array | concat: social_url_single %}
-	{% endif %}
-{% endfor %}
-
-
-
 
 <script type="application/ld+json">
 	{
@@ -46,7 +29,9 @@ Then "split" the social url that is provided to create another array and concato
 	  "image": "{{ site.url }}/{{site.logo}}",
 	  "email": "{{ site.data.contact.email }}",
 		"sameAs": [
-		{% for item in social_array %}"{{ item }}"{% if forloop.last == false %},{% endif %}{% endfor %}
+		{% for item in site.data.contact['Social Media'] %}
+		{% assign social_url = item[1] %}
+		"{{social_url}}"{% if forloop.last == false %},{% endif %}{% endfor %}
 	  ],
 	  "hasMap": "Map Link",
 	  "additionalType": "Optional Additional Type",
