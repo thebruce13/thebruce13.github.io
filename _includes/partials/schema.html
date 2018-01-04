@@ -1,0 +1,51 @@
+{% comment %} Schema information: http://www.whitespark.ca/blog/post/62-the-json-ld-markup-guide-to-local-business-schema {% endcomment %}
+
+{% assign social_array = '' | split: '' %}
+{% for item in site.data.contact['Social Media'] %}
+	{% assign social_site = item[0] %}
+	{% assign social_url = item[1] %}
+	{% if social_url != "" %}
+		{% assign social_url_single = social_url | split: '*'  %}
+		{% assign social_array = social_array | concat: social_url_single %}
+	{% endif %}
+{% endfor %}
+
+
+
+<pre>
+<!--<script type="application/ld+json">-->
+	{
+	  "@context": "http://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "{{ site.title }}",
+	  "location": {
+		"@type": "Place",
+		"name": "{{ site.title }}",
+		"address": {
+		  "@type": "PostalAddress",
+		  "streetAddress": "{{ site.data.contact.Address.street }}",
+		  "addressLocality": "{{ site.data.contact.Address.city }}",
+		  "addressRegion": "{{ site.data.contact.Address.state }}",
+		  "postalCode": "{{ site.data.contact.Address.zip }}"
+		}
+	  },
+	  "address": {
+		  "@type": "PostalAddress",
+		  "streetAddress": "{{ site.data.contact.Address.street }}",
+		  "addressLocality": "{{ site.data.contact.Address.city }}",
+		  "addressRegion": "{{ site.data.contact.Address.state }}",
+		  "postalCode": "{{ site.data.contact.Address.zip }}"
+		},
+	  "logo": "{{ site.url }}/{{site.logo}}",
+	  "image": "{{ site.url }}/{{site.logo}}",
+	  "email": "{{ site.data.contact.email }}",
+		"sameAs": [
+		{% for item in social_array %}"{{ item }}"{% if forloop.last == false %},{% endif %}{% endfor %}
+	  ],
+	  "hasMap": "Map Link",
+	  "additionalType": "Optional Additional Type",
+	  "telephone": "{{ site.data.contact.phone }}",
+	  "url": "{{ site.url }}"
+	}
+<!-- </script> -->
+</pre>
