@@ -1,5 +1,11 @@
 {% comment %} Schema information: http://www.whitespark.ca/blog/post/62-the-json-ld-markup-guide-to-local-business-schema {% endcomment %}
 
+{% comment %}
+Had to remove empty entries in from the contact.json.
+First had to create an empty array by using the split command.
+Then "split" the social url that is provided to create another array and concatonate that into the original.
+{% endcomment %}
+
 {% assign social_array = '' | split: '' %}
 {% for item in site.data.contact['Social Media'] %}
 	{% assign social_site = item[0] %}
@@ -12,8 +18,8 @@
 
 
 
-<pre>
-<!--<script type="application/ld+json">-->
+
+<script type="application/ld+json">
 	{
 	  "@context": "http://schema.org",
 	  "@type": "LocalBusiness",
@@ -47,5 +53,4 @@
 	  "telephone": "{{ site.data.contact.phone }}",
 	  "url": "{{ site.url }}"
 	}
-<!-- </script> -->
-</pre>
+</script>
