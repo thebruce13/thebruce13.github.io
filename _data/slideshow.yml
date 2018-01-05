@@ -1,3 +1,4 @@
 ---
-main: ["main", [ "img1.png","img2.png" ] ]
-subpage: [ "subpage" , [ "img1.png","img2.png" ] ]
+Sliders:
+  - main: ["main", [ "img1.png","img2.png" ] ]
+  - subpage: [ "subpage" , [ "img1.png","img2.png" ] ]
