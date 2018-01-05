@@ -1,3 +1,7 @@
 ---
-["main"]: [ "img1.png","img2.png" ] 
-["subpage"]: [ "img1.png","img2.png" ] 
+sliders:
+  Main:
+    - "/img/main_slider.jpg"
+    - "/uploads/2017/12/14/Subpage-1-1.jpg"
+  Secondary:
+    - "/uploads/2017/12/14/Subpage-1-1.jpg"
