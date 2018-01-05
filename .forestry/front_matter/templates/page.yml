@@ -20,6 +20,7 @@ fields:
   config:
     source:
       type: datafiles
-      file: _data-slideshow-yml
+      file: _data-contact-json
+      path: contact
   label: Slideshow
   name: slideshow
