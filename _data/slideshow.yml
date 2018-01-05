@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 slideshows:
      slider-name: Main
           - "/img/main_slider.jpg"
           - "/uploads/2017/12/14/Subpage-1-1.jpg"
      slider-name: Subpage
           - "/uploads/2017/12/14/Subpage-1-1.jpg"
+=======
+---
+name: Subpage - "/uploads/2017/12/14/Subpage-1-1.jpg"
+>>>>>>> 72893cab6c73758a72c2c61d5fdeb62dd19acca7
