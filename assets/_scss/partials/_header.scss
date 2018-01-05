@@ -12,7 +12,7 @@
     color: black;
   }
 
-  @include breakpoint(medium){
+  @include breakpoint(large){
     margin-bottom: -1.5rem;
   }
 }
