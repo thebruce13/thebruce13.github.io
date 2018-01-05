@@ -5,4 +5,11 @@ slideshows:
      - "/uploads/2017/12/14/Subpage-1-1.jpg"
 - slider-name: Subpage
   slides:
+<<<<<<< HEAD
      - "/uploads/2017/12/14/Subpage-1-1.jpg"
+=======
+  - "/uploads/2017/12/14/Subpage-1-1.jpg"
+- slider-name: Third Slider
+  slides:
+  - "/uploads/2017/12/14/coupon-book.jpg"
+>>>>>>> 6bfd7c4868b6dff11e3736cfb6d78fe8a0d46e91

@@ -19,10 +19,10 @@ fields:
   hidden: false
   default: ''
 - type: select
+  name: sliders
   config:
     source:
       type: datafiles
-      file: _data-slideshow-yml
-      path: ''
-  label: Slideshow
-  name: slideshow
+      file: _data-contact-json
+      path: contact
+  label: Sliders
