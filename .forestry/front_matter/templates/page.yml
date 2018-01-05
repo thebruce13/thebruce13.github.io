@@ -1,4 +1,6 @@
 ---
+pages:
+- specials.html
 hide_body: false
 fields:
 - name: title
@@ -20,7 +22,7 @@ fields:
   config:
     source:
       type: datafiles
-      file: _data-contact-json
-      path: contact
+      file: _data-slideshow-yml
+      path: slideshow
   label: Slideshow
   name: slideshow
