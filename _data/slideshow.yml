@@ -1,9 +1,9 @@
 ---
 slideshows:
   - Subpage:
-    slides:
-    - "/img/Subpage-1-1.jpg"
+      slides:
+        - "/img/Subpage-1-1.jpg"
   - Main:
-    slides:
-    - "/img/main_slider.jpg"
-    - "/uploads/2017/12/14/Subpage-1-1.jpg"
+      slides:
+        - "/img/main_slider.jpg"
+        - "/uploads/2017/12/14/Subpage-1-1.jpg"
