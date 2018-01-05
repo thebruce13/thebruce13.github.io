@@ -16,3 +16,10 @@ fields:
   type: image_gallery
   hidden: false
   default: ''
+- type: select
+  config:
+    source:
+      type: datafiles
+      file: _data-slideshow-yml
+  label: Slideshow
+  name: slideshow
