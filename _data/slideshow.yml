@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 slider-name: Main
     - "/img/main_slider.jpg"
     - "/uploads/2017/12/14/Subpage-1-1.jpg"
 slider-name: Subpage
     - "/uploads/2017/12/14/Subpage-1-1.jpg"
+=======
+slideshows:
+  slider-name: Subpage - "/uploads/2017/12/14/Subpage-1-1.jpg"
+>>>>>>> 604f68fdcad1516e23764905256d4d843beae9b1
