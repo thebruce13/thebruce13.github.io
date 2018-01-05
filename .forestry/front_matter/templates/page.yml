@@ -24,6 +24,6 @@ fields:
     source:
       type: datafiles
       file: _data-slideshow-yml
-      path: ''
+      path: slideshow
   label: Sliders
   default: slideshow
