@@ -23,6 +23,6 @@ fields:
   config:
     source:
       type: datafiles
-      file: _data-slideshow-yml
-      path: slideshow
+      file: _data-contact-json
+      path: contact
   label: Sliders
