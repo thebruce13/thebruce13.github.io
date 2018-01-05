@@ -1,4 +1,4 @@
 ---
 Sliders:
-  - main: ["main", [ "img1.png","img2.png" ] ]
-  - subpage: [ "subpage" , [ "img1.png","img2.png" ] ]
+  - main: [ "img1.png","img2.png" ] 
+  - subpage: [ "img1.png","img2.png" ] 
