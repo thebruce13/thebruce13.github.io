@@ -1,8 +1,5 @@
 ---
 slideshows:
-- slider-name: Third Slider
-  slides:
-  - "/uploads/2017/12/14/coupon-book.jpg"
 - slider-name: Main
   slides:
   - "/img/main_slider.jpg"
@@ -10,3 +7,6 @@ slideshows:
 - slider-name: Subpage
   slides:
   - "/uploads/2017/12/14/Subpage-1-1.jpg"
+- slider-name: Third Slider
+  slides:
+  - "/uploads/2017/12/14/coupon-book.jpg"
