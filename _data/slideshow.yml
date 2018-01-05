@@ -1,2 +1,3 @@
 ---
-- sliders: [ "img1.png","img2.png" ]
+slideshows: 
+    - sliders: [ "img1.png","img2.png" ]
