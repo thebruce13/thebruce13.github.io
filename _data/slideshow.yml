@@ -1,6 +1,15 @@
 ---
+<<<<<<< HEAD
 Main:
     - "/img/main_slider.jpg"
     - "/uploads/2017/12/14/Subpage-1-1.jpg"
 Subpage:
     - "/uploads/2017/12/14/Subpage-1-1.jpg"
+=======
+slideshows:
+  Main:
+  - "/img/main_slider.jpg"
+  - "/uploads/2017/12/14/Subpage-1-1.jpg"
+  Subpage:
+  - "/uploads/2017/12/14/Subpage-1-1.jpg"
+>>>>>>> 11d0f9aabb9a343831a219f80141b0ccde4948b8
