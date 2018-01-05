@@ -23,6 +23,6 @@ fields:
     source:
       type: datafiles
       file: _data-slideshow-yml
-      path: slideshow
+      path: ''
   label: Slideshow
   name: slideshow
