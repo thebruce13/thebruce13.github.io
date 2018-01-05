@@ -1,4 +1,7 @@
 ---
+- slideshow: Subpage
+  slides:
+  - "/img/Subpage-1-1.jpg"
 - slideshow: Main
   slides:
   - "/img/main_slider.jpg"
