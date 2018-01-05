@@ -1,3 +1,6 @@
+---
+name: sliders
+---
 - slider-name: Main
   slides:
     img/main_slider.jpg
