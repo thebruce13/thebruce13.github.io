@@ -5,4 +5,4 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap', '~> 1.1'
 end
 
-gem "jekyll", "3.6.2"
+gem "jekyll", "3.7.0"
