@@ -1,4 +1,2 @@
 ---
-sliders:
-  - main: [ "img1.png","img2.png" ]
-  - seconday: [ "img1.png","img2.png" ]
+- sliders: [ "img1.png","img2.png" ]
