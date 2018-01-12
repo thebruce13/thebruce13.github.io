@@ -8,10 +8,10 @@ layout: default
             <div class="article-body">
                 <div class="row">
                     <div class="columns medium-4 text-center">
-                        <img data-src="{{ page.image }}" class="lazyload blur-up">
+                        <img data-src="{{ page.image | absolute_url }}" class="lazyload blur-up">
 
                         <noscript>
-                            <img src="{{ page.image }}">
+                            <img src="{{ page.image | absolute_url }}">
                         </noscript>
                     </div>
                     <div class="columns medium-8">
