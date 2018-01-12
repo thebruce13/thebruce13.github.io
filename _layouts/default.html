@@ -1,62 +1,46 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-    {% include header.html %}
-</head> 
+    <head>
+        {% include header.html %}
+    </head> 
 
-<body>
-{% comment %}
-    Assign the menu variable to what is defined by the jekyll-menu plugin.
-    @link https://github.com/forestryio/jekyll-menus#recursive-menus
-{% endcomment %}
-{% assign menu = site.menus.header %}
+    <body>
+        {% comment %}
+            Assign the menu variable to what is defined by the jekyll-menu plugin.
+            @link https://github.com/forestryio/jekyll-menus#recursive-menus
+        {% endcomment %}
+        {% assign menu = site.menus.header %}
 
-<div class="show-for-sr">{% include svg/svg.svg %}</div>
-<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
-    <!-- OFF CANVAS MENU -->
-    {% include navigation/nav-off-canvas.html %}
-</div>
-<div class="off-canvas-content" data-off-canvas-content>
-    <!-- TOP BAR -->
-    {% include navigation/nav-top-bar.html %}
-    <header class="header">
-        <div class="header-logo text-center">
-            <a href="{{ site.url }}">
-                <img src="{{ site.logo }}" width="138" height="138" alt="{{ site.title }}"><br>
-                Field's Park Motel
-            </a>
+        <div class="show-for-sr">{% include svg/svg.svg %}</div>
+        <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+            <!-- OFF CANVAS MENU -->
+            {% include navigation/nav-off-canvas.html %}
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- TOP BAR -->
+            {% include navigation/nav-top-bar.html %}
+            <header class="header">
+                <div class="header-logo text-center">
+                    <a href="{{ site.url }}">
+                        <img src="{{ site.logo }}" width="138" height="138" alt="{{ site.title }}"><br>
+                        Field's Park Motel
+                    </a>
+                </div>
+
+                <!-- Navigaion -->
+                {% include navigation/nav-main.html %}
+            </header>
+            <section class="hero">
+                {% include partials/slider.html %}
+            </section>
+            <div class="content">
+                {{ content }}
+            </div>
         </div>
 
-        <!-- Navigaion -->
-        {% include navigation/nav-main.html %}
-    </header>
-    <section class="hero">
-        {% include partials/slider.html %}
-    </section>
-    <div class="content">
-        {{ content }}
-    </div>
-</div>
+        {% include footer.html %}
+        {% include scripts.html %}
+        {% include partials/schema.html %}
 
-{% include footer.html %}
-
-{% include partials/schema.html %}
-
-<script>
-    WebFontConfig = {
-        google: {
-            families: ['Great+Vibes:400', 'Open Sans:400,400italic,700,700italic', 'Cinzel:700']
-        }
-    };
-
-    (function (d) {
-        var wf = d.createElement('script'), s = d.scripts[0];
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
-        s.parentNode.insertBefore(wf, s);
-    })(document);
-</script>
-<script src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=76&amp;locationId=556761&amp;lang=en_US&amp;year=2017&amp;display_version=2"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="{{site.link}}/assets/js/app.js"></script>
-</body>
+    </body>
 </html>
