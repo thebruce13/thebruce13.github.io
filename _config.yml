@@ -31,8 +31,11 @@ plugins:
 #Collections
 collections:
  specials:
+  output: false
  rooms:
   output: true
+ slideshows:
+  output: false
 
 # Build settings
 markdown: kramdown
