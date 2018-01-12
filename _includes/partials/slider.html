@@ -1,13 +1,25 @@
 {% comment %}
     Need to set up what type of slider size to use based on if it is the homepage or not.
 {% endcomment %}
-
 {% if page.url == "/" %}
     {% assign slider = 'large_slider' %}
 {% else %}
     {% assign slider = 'medium_slider' %}
 {% endif %}
-{% if page.slide_images %}
+
+
+     {% assign slides = item.slides %}
+
+
+
+<!-- {{forloop.index}}
+{{ item.path }}
+{{ item.title }} 
+{{ item.slides }}<br> -->
+
+
+
+{% if page.slider %}
 <div class="slide-wrapper">
     <div class="orbit intrinsic {{slider}} {{ classes }}"
             role="region"
@@ -18,7 +30,7 @@
         <ul class="orbit-container {{ classes }}">
             {% comment %} PREV/NEXT BUTTONS {% endcomment %}
             {% comment %} Show buttons if there is more than 1 slide image. {% endcomment %}
-            {% if page.slide_images.size > 1 %}
+            {% if slides|size > 1 %}
                 <button class="orbit-previous" aria-label="Previous slide">
                     <svg class="icon">
                         <use xlink:href="#angle-left"></use>
@@ -33,21 +45,25 @@
             {% endif %}
 
             {% comment %} SLIDESHOW IMAGES {% endcomment %}
-            {% for image in page.slide_images %}
-                {% comment %} Setup each repeater field as TimberImage. {% endcomment %}
-                {% comment %} If this is the first slider, set this slide to active. {% endcomment %}
-                <li class="{% if forloop.index0 == 0 %}is-active{% endif %} orbit-slide {{ classes }}"
-                    {% comment %} FIRST SLIDE IMG BG -- This is for the blur-up effect. {% endcomment %}
-                    {% if forloop.first == true %}style="background-image: url({% image {{slider}} {{image}} %}); background-size: cover; background-position: center, center;"{% endif %}>
+            {% for item in site.slideshows %}
+                {% if item.path == page.slider %}
+                    {% for image in item.slides %}
+                        {% comment %} Setup each repeater field as TimberImage. {% endcomment %}
+                        {% comment %} If this is the first slider, set this slide to active. {% endcomment %}
+                        <li class="{% if forloop.index0 == 0 %}is-active{% endif %} orbit-slide {{ classes }}"
+                            {% comment %} FIRST SLIDE IMG BG -- This is for the blur-up effect. {% endcomment %}
+                            {% if forloop.first == true %}style="background-image: url({% image {{slider}} {{image}} %}); background-size: cover; background-position: center, center;"{% endif %}>
 
-                    {% comment %} SLIDE IMAGE {% endcomment %}
-                    {% comment %} Height needs to be passed into this file with an include with statement. {% endcomment %}
-                    {% comment %} To get height ratio right: height = slider height( max slider height new slider height ) {% endcomment %}
-                    <img class="lazyload blur-up" data-src="{% image {{slider}} {{image}} %}">
+                            {% comment %} SLIDE IMAGE {% endcomment %}
+                            {% comment %} Height needs to be passed into this file with an include with statement. {% endcomment %}
+                            {% comment %} To get height ratio right: height = slider height( max slider height new slider height ) {% endcomment %}
+                            <img class="lazyload blur-up" data-src="{% image {{slider}} {{image}} %}">
 
-                    {% comment %} FIRST IMAGE FOR NO JS {% endcomment %}
-                    {% if forloop.first == true %}<noscript><img src="{% image {{slider}} {{image}} %}"></noscript>{% endif %}
-                </li>
+                            {% comment %} FIRST IMAGE FOR NO JS {% endcomment %}
+                            {% if forloop.first == true %}<noscript><img src="{% image {{slider}} {{image}} %}"></noscript>{% endif %}
+                        </li>
+                    {% endfor %}
+                {% endif %}
             {% endfor %}
 		</ul>
     </div>    
