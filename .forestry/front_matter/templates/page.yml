@@ -13,11 +13,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: slide_images
-  label: Slide images
-  type: image_gallery
-  hidden: false
-  default: ''
 - type: select
   name: sliders
   config:
@@ -27,4 +22,4 @@ fields:
       path: ''
       section: slideshows
   label: Sliders
-  default: ''
+  default: _slideshows/subpage.md
