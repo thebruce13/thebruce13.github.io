@@ -1,16 +1,9 @@
 ---
-layout: page
-title: Contact & Location
-menu:
-  header:
-    identifier: contact
-    url: "/contact-location.html"
-    weight: 5
-    title: Contact
-slide_images:
-    - img/Subpage-1-1.jpg
+layout: default
 ---
-<div  class="row">
+{{ page.content }}
+
+<div class="row"> 
     Email me
     <form method="POST" action="https://www.enformed.io/e9uuwcns">
         <label class="medium-6 columns">
@@ -35,8 +28,7 @@ slide_images:
         </label>
         <button type="submit" class="button booking-link">Submit</button>
         <input type="hidden" name="*reply" value="email">
-        <input type="hidden" name="*redirect" value="{{page.url|absolute_url}}#form-submit" />
+        <input type="hidden" name="*redirect" value="{{ page.url|absolute_url }}#form-submit" />
         <input type="hidden" name="*subject" value="New Submission from Contact Us" />
-
     </form>
 </div>
