@@ -1,6 +1,6 @@
 ---
 title: Two Room Suite with Bunk Beds
-layout: single-room
+layout: room
 image: /img/Two-Room-Suite-279x214-c-default.jpg
 position: 4
 ---

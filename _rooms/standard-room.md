@@ -1,6 +1,6 @@
 ---
 title: Standard Room
-layout: single-room
+layout: room
 image: /img/Standard-Rooms-279x214-c-default.jpg
 position: 4
 ---

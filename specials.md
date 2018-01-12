@@ -1,5 +1,5 @@
 ---
-layout: archive-specials
+layout: specials
 title: Specials
 menu:
   header:

@@ -1,6 +1,6 @@
 ---
 title: Deluxe Room
-layout: single-room
+layout: room
 image: /img/deluxe-room-279x214-c-default.jpg
 position: 1
 ---

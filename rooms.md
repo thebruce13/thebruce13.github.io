@@ -1,5 +1,5 @@
 ---
-layout: archive-rooms
+layout: rooms
 title: Rooms
 menu:
     header:
