@@ -31,6 +31,7 @@ collections:
  specials:
  rooms:
   output: true
+ slideshows:
 
 # Build settings
 markdown: kramdown
