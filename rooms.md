@@ -9,6 +9,7 @@ menu:
 slide_images:
     - img/Subpage-1-1.jpg
 ---
+
 Our reservation policy is as follows:
 Guaranteed reservations must be canceled 72 hours in advance to avoid being charged a one night’s stay.
 You must receive a cancellation number directly from the Park Motel and keep record of the cancellation number.
