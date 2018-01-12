@@ -7,9 +7,10 @@ fields:
 - type: text
   name: navigation_weight
   label: Navigation Weight
-- type: image_gallery
-  name: slide_images
-  label: SLIDE IMAGES
-- type: text
-  name: metatitle
-  label: Metatitle
+- type: select
+  name: slider
+  config:
+    source:
+      type: pages
+      section: slideshows
+  label: Slider
