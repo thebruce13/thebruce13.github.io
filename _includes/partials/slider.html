@@ -7,11 +7,6 @@
     {% assign slider = 'medium_slider' %}
 {% endif %}
 
-
-     {% assign slides = item.slides %}
-
-
-
 <!-- {{forloop.index}}
 {{ item.path }}
 {{ item.title }} 
@@ -30,7 +25,7 @@
         <ul class="orbit-container {{ classes }}">
             {% comment %} PREV/NEXT BUTTONS {% endcomment %}
             {% comment %} Show buttons if there is more than 1 slide image. {% endcomment %}
-            {% if slides|size > 1 %}
+
                 <button class="orbit-previous" aria-label="Previous slide">
                     <svg class="icon">
                         <use xlink:href="#angle-left"></use>
@@ -42,8 +37,7 @@
                         <use xlink:href="#angle-right"></use>
                     </svg>
                 </button>
-            {% endif %}
-
+    
             {% comment %} SLIDESHOW IMAGES {% endcomment %}
             {% for item in site.slideshows %}
                 {% if item.path == page.slider %}
