@@ -1,9 +1,7 @@
 ---
 layout: index
 title: Field’s Park Motel
-slide_images:
-- img/main_slider.jpg
-- img/Subpage-1-1.jpg
+slider: _slideshows/main.md
 menu:
     header:
         identifier: home

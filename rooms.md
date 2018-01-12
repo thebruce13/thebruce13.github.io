@@ -1,13 +1,12 @@
 ---
 layout: rooms
 title: Rooms
+slider: _slideshows/subpage.md
 menu:
     header:
         identifier: rooms
         url: "/rooms.html"
         weight: 2
-slide_images:
-    - img/Subpage-1-1.jpg
 ---
 
 Our reservation policy is as follows:
