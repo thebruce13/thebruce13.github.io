@@ -7,13 +7,6 @@
     {% assign slider = 'medium_slider' %}
 {% endif %}
 
-<!-- {{forloop.index}}
-{{ item.path }}
-{{ item.title }} 
-{{ item.slides }}<br> -->
-
-
-
 {% if page.slider %}
 <div class="slide-wrapper">
     <div class="orbit intrinsic {{slider}} {{ classes }}"
@@ -52,6 +45,7 @@
                             {% comment %} SLIDE IMAGE {% endcomment %}
                             {% comment %} Height needs to be passed into this file with an include with statement. {% endcomment %}
                             {% comment %} To get height ratio right: height = slider height( max slider height new slider height ) {% endcomment %}
+                            {% comment %} ToDo: Set this up to have src-set {% endcomment %}
                             <img class="lazyload blur-up" data-src="{% image {{slider}} {{image}} %}">
 
                             {% comment %} FIRST IMAGE FOR NO JS {% endcomment %}
