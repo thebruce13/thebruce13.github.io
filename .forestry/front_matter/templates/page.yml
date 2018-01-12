@@ -22,8 +22,9 @@ fields:
   name: sliders
   config:
     source:
-      type: datafiles
-      file: _data-slideshow-yml
-      path: slideshow
+      type: pages
+      file: _data-contact-yml
+      path: ''
+      section: slideshows
   label: Sliders
-  default: slideshow
+  default: ''
