@@ -20,8 +20,8 @@
             {% for item in site.slideshows %}
                 {% if item.path == page.slider %}
                     {% comment %} PREV/NEXT BUTTONS {% endcomment %}
-                    {% comment %} Show buttons if there is more than 1 slide image. {% endcomment %}    
-                    {% if item.slides|length > 1 %}
+                    {% comment %} Show buttons if there is more than 1 slide image. {% endcomment %}
+                    {% if item.slides.size > 1 %}
                         <button class="orbit-previous" aria-label="Previous slide">
                             <svg class="icon">
                                 <use xlink:href="#angle-left"></use>
