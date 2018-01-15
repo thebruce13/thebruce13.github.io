@@ -12,17 +12,20 @@
         {% assign menu = site.menus.header %}
 
         <div class="show-for-sr">{% include svg/svg.svg %}</div>
+
         <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
             <!-- OFF CANVAS MENU -->
             {% include navigation/nav-off-canvas.html %}
         </div>
+
         <div class="off-canvas-content" data-off-canvas-content>
             <!-- TOP BAR -->
             {% include navigation/nav-top-bar.html %}
+
             <header class="header">
                 <div class="header-logo text-center">
                     <a href="{{ site.url }}">
-                        <img src="{{ site.logo }}" width="138" height="138" alt="{{ site.title }}"><br>
+                        <img src="{{ site.logo | absolute_url }}" width="138" height="138" alt="{{ site.title }}"><br>
                         Field's Park Motel
                     </a>
                 </div>
@@ -30,9 +33,11 @@
                 <!-- Navigaion -->
                 {% include navigation/nav-main.html %}
             </header>
+
             <section class="hero">
                 {% include partials/slider.html %}
             </section>
+
             <div class="content">
                 {{ content }}
             </div>
@@ -41,6 +46,5 @@
         {% include footer.html %}
         {% include scripts.html %}
         {% include partials/schema.html %}
-
     </body>
 </html>
