@@ -5,7 +5,7 @@ slider: _slideshows/subpage.md
 menu:
   header:
     identifier: _specials
-    url: "/specials.html"
+    url: "/specials"
     weight: 4
     identifer: specials
 ---

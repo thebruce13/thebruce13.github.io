@@ -5,7 +5,7 @@ slider: _slideshows/subpage.md
 menu:
     header:
         identifier: contact
-        url: "/contact-location.html"
+        url: "/contact-location"
         weight: 5
         title: Contact
 ---

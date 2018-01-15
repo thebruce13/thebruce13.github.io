@@ -26,11 +26,15 @@ plugins:
   - jekyll-menus
   - mini_magick
 
+#Permalink
+permalink: pretty
+
 #Collections
 collections:
  specials:
  rooms:
   output: true
+  permalink: /rooms/:path/
  slideshows:
 
 # Build settings
@@ -62,9 +66,6 @@ image:
 sitemap:
   filename: "/sitemap.xml"
 
-#
-#
-#
 # The domain for your local project
 # PROXY: "localhost"
 

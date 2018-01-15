@@ -5,7 +5,7 @@ slider: _slideshows/subpage.md
 menu:
     header:
         identifier: amenities
-        url: "/amenities.html"
+        url: "/amenities"
         weight: 3
 ---
 

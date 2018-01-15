@@ -5,7 +5,7 @@ slider: _slideshows/subpage.md
 menu:
     header:
         identifier: rooms
-        url: "/rooms.html"
+        url: "/rooms"
         weight: 2
 ---
 
