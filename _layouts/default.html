@@ -5,22 +5,20 @@
     </head> 
 
     <body>
-        {% comment %}
-            Assign the menu variable to what is defined by the jekyll-menu plugin.
-            @link https://github.com/forestryio/jekyll-menus#recursive-menus
-        {% endcomment %}
-        {% assign menu = site.menus.header %}
-
-        <div class="show-for-sr">{% include svg/svg.svg %}</div>
+        <div class="hide">{% include svg/svg.svg %}</div>
 
         <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
-            <!-- OFF CANVAS MENU -->
-            {% include navigation/nav-off-canvas.html %}
+            {% include navigation/nav-off-canvas.html menu=site.menus.header %}
         </div>
 
         <div class="off-canvas-content" data-off-canvas-content>
-            <!-- TOP BAR -->
-            {% include navigation/nav-top-bar.html %}
+            {% comment %} Top Bar {% endcomment %}
+            <div class="title-bar fixed hide-for-large" data-hide-for="large" data-open="offCanvas">
+                <div class="float-right">
+                    <div class="title-bar-title text-upper">Menu</div>
+                    <button class="menu-icon" type="button" data-open="offCanvas"></button>
+                </div>
+            </div>
 
             <header class="header">
                 <div class="header-logo text-center">
@@ -30,8 +28,7 @@
                     </a>
                 </div>
 
-                <!-- Navigaion -->
-                {% include navigation/nav-main.html %}
+                {% include navigation/nav-main.html menu=site.menus.header %}
             </header>
 
             <section class="hero">
@@ -41,9 +38,10 @@
             <div class="content">
                 {{ content }}
             </div>
+
+            {% include footer.html %}
         </div>
 
-        {% include footer.html %}
         {% include scripts.html %}
         {% include partials/schema.html %}
     </body>
