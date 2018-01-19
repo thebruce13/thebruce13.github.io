@@ -45,7 +45,7 @@
         </li>
         
         <li class=" ">
-            <a href="/rooms.html" class="active" >
+            <a href="/rooms.html" >
                 Rooms
             </a>
 
@@ -121,7 +121,7 @@
         </li>
         
         <li class=" ">
-            <a href="/rooms.html" class="active" >
+            <a href="/rooms.html" >
                 Rooms
             </a>
 
@@ -165,194 +165,83 @@
 
 
 
-<div class="slide-wrapper">
-    <div class="orbit intrinsic medium_slider "
-            role="region"
-            data-orbit
-            data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
-            data-auto-play="false"
-            data-swipe="true">
-        <ul class="orbit-container ">  
-            
-            
-                
-            
-                
-                    
-                    
-                    
-                        <button class="orbit-previous" aria-label="Previous slide">
-                            <svg class="icon">
-                                <use xlink:href="#angle-left"></use>
-                            </svg>
-                        </button>
-        
-                        <button class="orbit-next" aria-label="Next slide">
-                            <svg class="icon">
-                                <use xlink:href="#angle-right"></use>
-                            </svg>
-                        </button>
-                    
-
-                    
-                        
-                        
-                        <li class="is-active orbit-slide "
-                            
-                            style="background-image: url(/generated/uploads/2017/12/14/main_slider-1800x400-f0fbd8.jpg); background-size: cover; background-position: center, center;">
-
-                            
-                            
-                            
-                            
-                            <img class="lazyload blur-up" data-src="/generated/uploads/2017/12/14/main_slider-1800x400-f0fbd8.jpg">
-
-                            
-                            <noscript><img src="/generated/uploads/2017/12/14/main_slider-1800x400-f0fbd8.jpg"></noscript>
-                        </li>
-                    
-                        
-                        
-                        <li class=" orbit-slide "
-                            
-                            >
-
-                            
-                            
-                            
-                            
-                            <img class="lazyload blur-up" data-src="/generated/uploads/2017/12/14/Subpage-1-1-1800x400-c767de.jpg">
-
-                            
-                            
-                        </li>
-                    
-                
-            
-		</ul>
-    </div>    
-</div>
-        
-
-
     </section>
     <div class="content">
-        <div class="row column">
-    <article class="post-type-" id="post-">
+        <div class="content-wrapper row column">
+    <article class="page-type-" id="page-">
         <section class="article-content">
-            <h1 class="article-h1">Rooms</h1>
+            <h1 class="article-h1">Standard Room</h1>
             <div class="article-body">
-                Our reservation policy is as follows:
-Guaranteed reservations must be canceled 72 hours in advance to avoid being charged a one night’s stay.
-You must receive a cancellation number directly from the Park Motel and keep record of the cancellation number.
-You must be at least 21 years of age to reserve and/or check into a room. All guests under 21 must be accompanied by a parent or guardian. Government issued identification may be required at check-in for all occupants.
+                <div class="row">
+                    <div class="columns medium-4 text-center">
+                        <img data-src="/img/Standard-Rooms-279x214-c-default.jpg" class="lazyload blur-up">
+
+                        <noscript>
+                            <img src="/img/Standard-Rooms-279x214-c-default.jpg">
+                        </noscript>
+                    </div>
+                    <div class="columns medium-8">
+                        <p>Our standard rooms have 2 Queen Beds, Refrigerators and Microwave. Sleeps 4 comfortably. Our motel offers connecting standard rooms.</p>
+
+                        <div class="booking-bar">
+    <form id='resblock' class='resblock row' action='http://www.innline.com/lodgical/sqlcpgetunittype.asp'
+          method='get'>
+        <div class="row medium-up-2 ">
+            <input type='hidden' name='propertyId' value='6100'/>
+            <input type='hidden' name='findIt' value='on'/>
+
+            <div class="column">
+                <label>Check-In<br>
+                    <input  type='text' id='arriveDt' name='arriveDt' value="" required/>
+                </label>
+            </div>
+            <div class="column">
+                <label>Check-Out<br>
+                    <input  type='text' id='departDt' name='departDt' value="" required/>
+                </label>
+            </div>
+            <div class="column">
+                <label>Adults<br>
+                    <select name='adult'>
+                        <option value='1' selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="column">
+                <label>Children<span style='font-size:10px;'>(Ages 4-18)</span><br>
+                <select name='children'>
+                    <option value='0' selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                </label>
+            </div>
+            <div class="text-center">
+                <button class="button booking-link " type="submit" form="resblock" value="Submit">Book Now</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+                    </div>
+                </div>
             </div>
         </section>
     </article>
-</div>
-
-
-
-<div class="row archive-entry">
-    
-    <div class="medium-3 column">
-        <img data-src="/img/deluxe-room-279x214-c-default.jpg"
-             class="lazyload blur-up">
-
-        <noscript>
-            <img src="http://fieldspark.test/img/deluxe-room-279x214-c-default.jpg">
-        </noscript>
-    </div>
-    
-    <div class="medium-9 column">
-        <h4 class="text-primary">Deluxe Room</h4>
-        <div class="archive-text">
-            <p>Our Deluxe Rooms are spacious and are located by the outside pool. They have 2 Queen Beds, sofa sleeper/or futons, refrigerator and microwave. Max occupancy is 6 people.</p>
-
-        </div>
-        <div class="archive-button">
-            <a href="/rooms/deluxe-room.html ">
-                <div class="button booking-link">Book Now</div>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="row archive-entry">
-    
-    <div class="medium-3 column">
-        <img data-src="/img/Two-Room-Suite-with-Bunkbeds-279x214-c-default.jpg"
-             class="lazyload blur-up">
-
-        <noscript>
-            <img src="http://fieldspark.test/img/Two-Room-Suite-with-Bunkbeds-279x214-c-default.jpg">
-        </noscript>
-    </div>
-    
-    <div class="medium-9 column">
-        <h4 class="text-primary">Two Room Suite with Bunk Beds</h4>
-        <div class="archive-text">
-            <p>Our two room suite with bunkbeds has a Queen Bed in the bedroom quarters with your own TV. The Living Room quarters consist of a Queen bed, bunk bed, microwave, refrigerator and TV. Max occupancy is 6 people.</p>
-
-        </div>
-        <div class="archive-button">
-            <a href="/rooms/two-room-suite.html ">
-                <div class="button booking-link">Book Now</div>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="row archive-entry">
-    
-    <div class="medium-3 column">
-        <img data-src="/img/Standard-Rooms-279x214-c-default.jpg"
-             class="lazyload blur-up">
-
-        <noscript>
-            <img src="http://fieldspark.test/img/Standard-Rooms-279x214-c-default.jpg">
-        </noscript>
-    </div>
-    
-    <div class="medium-9 column">
-        <h4 class="text-primary">Standard Room</h4>
-        <div class="archive-text">
-            <p>Our standard rooms have 2 Queen Beds, Refrigerators and Microwave. Sleeps 4 comfortably. Our motel offers connecting standard rooms.</p>
-
-        </div>
-        <div class="archive-button">
-            <a href="/rooms/standard-room.html ">
-                <div class="button booking-link">Book Now</div>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="row archive-entry">
-    
-    <div class="medium-3 column">
-        <img data-src="/img/Two-Room-Suite-279x214-c-default.jpg"
-             class="lazyload blur-up">
-
-        <noscript>
-            <img src="http://fieldspark.test/img/Two-Room-Suite-279x214-c-default.jpg">
-        </noscript>
-    </div>
-    
-    <div class="medium-9 column">
-        <h4 class="text-primary">Two Room Suite with Bunk Beds</h4>
-        <div class="archive-text">
-            <p>Two room suite has two separate rooms. Queen bed in the bedroom quarters with our own TV. Living room quarters has a Queen bed, Futon, TV, refrigerator and microwave. Sleeps 6 comfortably.</p>
-
-        </div>
-        <div class="archive-button">
-            <a href="/rooms/two-room-suite-bunk-beds.html ">
-                <div class="button booking-link">Book Now</div>
-            </a>
-        </div>
-    </div>
-</div>
-}
+</div><!-- /content-wrapper -->
     </div>
 </div>
 <footer class="footer">

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://fieldspark.test/rooms/deluxe-room.html</loc>
+<lastmod>2017-12-21T16:46:43-06:00</lastmod>
+</url>
+<url>
+<loc>http://fieldspark.test/rooms/standard-room.html</loc>
+<lastmod>2017-12-21T16:46:43-06:00</lastmod>
+</url>
+<url>
+<loc>http://fieldspark.test/rooms/two-room-suite-bunk-beds.html</loc>
+<lastmod>2017-12-21T16:46:43-06:00</lastmod>
+</url>
+<url>
+<loc>http://fieldspark.test/rooms/two-room-suite.html</loc>
+<lastmod>2017-12-21T16:46:43-06:00</lastmod>
+</url>
+<url>
+<loc>http://fieldspark.test/amenities.html</loc>
+</url>
+<url>
+<loc>http://fieldspark.test/contact-location.html</loc>
+</url>
+<url>
+<loc>http://fieldspark.test/</loc>
+</url>
+<url>
+<loc>http://fieldspark.test/rooms.html</loc>
+</url>
+<url>
+<loc>http://fieldspark.test/specials.html</loc>
+</url>
+</urlset>
