@@ -1,0 +1,70 @@
+// ---------------------------------------
+//  Hero Orbit Slider
+// ---------------------------------------
+.hero {
+  background-color: $light-gray;
+}
+
+.orbit-next,
+.orbit-previous {
+  width: 75px;
+  transition: background-color .3s;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    fill: $white;
+    opacity: .45;
+    transition: opacity .3s;
+  }
+}
+
+.orbit:hover {
+  .icon {
+    opacity: .85;
+  }
+}
+
+.slick-next-arrow,
+.slick-previous-arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 10;
+  padding: 1rem;
+  width: 75px;
+  color: #fefefe;
+  transition: background-color .3s;
+  cursor: pointer;
+
+  .icon {
+    width: 75px;
+    height: 75px;
+    fill: $black;
+    opacity: .45;
+    transition: opacity .3s;
+  }
+}
+
+.slick-previous-arrow{
+  left: -1.2rem;
+  @include breakpoint(large){
+    left: -5rem;
+  }
+}
+
+.slick-next-arrow{
+  left: auto;
+  right: 1rem;
+
+  @include breakpoint(large) {
+    right: -3.5rem;
+  }
+}
+
+
+.slick-slider:hover {
+  .icon {
+    opacity: .85;
+  }
+}

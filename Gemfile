@@ -4,5 +4,3 @@ group :jekyll_plugins do
     gem 'mini_magick', '~> 4.8'
     gem 'jekyll-sitemap', '~> 1.1'
 end
-
-gem "jekyll", "3.7.0"

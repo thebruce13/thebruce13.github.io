@@ -1,0 +1,25 @@
+---
+pages:
+- specials.html
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- type: select
+  name: sliders
+  config:
+    source:
+      type: pages
+      file: _data-contact-yml
+      path: ''
+      section: slideshows
+  label: Sliders
+  default: _slideshows/subpage.md
