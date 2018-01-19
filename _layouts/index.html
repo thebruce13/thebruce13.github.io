@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<!-- PROMOTIONAL CIRCLES -->
+<div class="promo-circle-wrapper">
+    <div class="promo-circle">
+        <div class="icon-wrapper">
+            <svg class="icon map-icon">
+                <use xlink:href="#wifi"></use>
+            </svg>
+        </div>
+        Free Wifi
+    </div>
+
+    <div class="promo-circle">
+        <div class="icon-wrapper">
+            <svg class="icon map-icon">
+                <use xlink:href="#budget"></use>
+            </svg>
+        </div>
+        Budget Friendly
+    </div>
+
+    <div class="promo-circle">
+        <div class="icon-wrapper">
+            <svg class="icon map-icon">
+                <use xlink:href="#waterpark"></use>
+            </svg>
+        </div>
+        Waterpark Tickets
+    </div>
+
+    <div class="promo-circle">
+        <div class="icon-wrapper">
+            <svg class="icon map-icon">
+                <use xlink:href="#central_location"></use>
+            </svg>
+        </div>
+        Central Location
+    </div>
+</div>
+
+<div class="row column">
+    <div id="rooms" class="flex-slick">
+        {% assign rooms = site.rooms | sort : 'position' %}
+        {% for room in rooms %}
+            {% include partials/card.html %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="google-map">
+    <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.975499390728!2d-89.76901588394841!3d43.627868879122055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807460f62f28aed%3A0xd3192c31765dc4f6!2sField&#39;s+Park+Motel!5e0!3m2!1sen!2sus!4v1498061655459"
+            width="100%" height="375" frameborder="0" style="border:0" class="lazyload blur-up"
+            allowfullscreen></iframe>
+</div>
+
+<noscript>
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.975499390728!2d-89.76901588394841!3d43.627868879122055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807460f62f28aed%3A0xd3192c31765dc4f6!2sField&#39;s+Park+Motel!5e0!3m2!1sen!2sus!4v1498061655459"
+                width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</noscript>

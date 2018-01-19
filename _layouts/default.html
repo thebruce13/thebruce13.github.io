@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        {% include header.html %}
+    </head> 
+
+    <body>
+        <div class="hide">{% include svg/svg.svg %}</div>
+
+        <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+            {% include navigation/nav-off-canvas.html menu=site.menus.header %}
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+            {% comment %} Top Bar {% endcomment %}
+            <div class="title-bar fixed hide-for-large" data-hide-for="large" data-open="offCanvas">
+                <div class="float-right">
+                    <div class="title-bar-title text-upper">Menu</div>
+                    <button class="menu-icon" type="button" data-open="offCanvas"></button>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="header-logo text-center">
+                    <a href="{{ site.url }}">
+                        <img src="{{ site.logo | absolute_url }}" width="138" height="138" alt="{{ site.title }}"><br>
+                        Field's Park Motel
+                    </a>
+                </div>
+
+                {% include navigation/nav-main.html menu=site.menus.header %}
+            </header>
+
+            <section class="hero">
+                {% include partials/slider.html %}
+            </section>
+
+            <div class="content">
+                {{ content }}
+            </div>
+
+            {% include footer.html %}
+        </div>
+
+        {% include scripts.html %}
+        {% include schema.html %}
+    </body>
+</html>

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="content-wrapper row column">
+    <article class="page-type-{{ page.page_type }}" id="page-{{ page.ID }}">
+        <section class="article-content">
+            <h1 class="article-h1">{{ page.title }}</h1>
+            <div class="article-body">
+                <div class="row">
+                    <div class="columns medium-4 text-center">
+                        <img data-src="{{ page.image | absolute_url }}" class="lazyload blur-up">
+
+                        <noscript>
+                            <img src="{{ page.image | absolute_url }}">
+                        </noscript>
+                    </div>
+
+                    <div class="columns medium-8">
+                        {{ content }}
+                        {% include partials/booking-form.html %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</div>

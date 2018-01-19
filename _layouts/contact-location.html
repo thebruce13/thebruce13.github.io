@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{{ content }}
+
+<div class="row"> 
+    Email me
+    <form method="POST" action="https://www.enformed.io/e9uuwcns">
+        <label class="medium-6 columns">
+            First Name
+            <input type="text" name="first">
+        </label>
+
+        <label class="medium-6 columns">
+            Last Name
+            <input type="text" name="phone">
+        </label>
+
+        <label class="medium-6 columns">
+            Phone
+            <input type="text" name="phone">
+        </label>
+
+        <label class="medium-6 columns">
+            Email
+            <input type="email" name="email">
+        </label>
+
+        <label class="medium-12 columns">
+            Message
+            <textarea name="message"></textarea>
+        </label>
+
+        <button type="submit" class="button booking-link">Submit</button>
+        
+        <input type="hidden" name="*reply" value="email">
+        <input type="hidden" name="*redirect" value="{{ page.url | absolute_url }}#form-submit" />
+        <input type="hidden" name="*subject" value="New Submission from Contact Us" />
+    </form>
+</div>
