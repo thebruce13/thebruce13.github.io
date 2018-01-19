@@ -1,1 +1,3 @@
-Sitemap: http://fieldspark.test/sitemap.xml
+# go away
+User-agent: *
+Disallow: /
