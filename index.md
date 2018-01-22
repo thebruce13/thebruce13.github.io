@@ -10,16 +10,8 @@ menu:
         title: Home
 ---
 
+The Park Motel is situated in the River District of Downtown Wisconsin Dells. A great value vacation combination! The Park Motel is a terrific way to experience the long-time tradition of the Wisconsin Dells at an affordable price for any family. As an added bonus, guests at the Park Motel will receive 4 waterpark passes to over 500,000 sq. ft of indoor and outdoor waterparks at the nearby Wilderness Resort. Guests of the Park Motel can also take advantage of our special. Just minutes away are all the exciting attractions and shopping in the Dells River District. Experience the real fun of downtown Wisconsin Dells with all the shops, attractions, museums, pubs, restaurants, boat tours, and river walk. We have a clean and refreshing heated outside pool with a great view of the nearby Bowman Park. Enjoy our well appointed rooms and friendly staff! We offer standard rooms, deluxe rooms and suites.
 
-    <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-XXXXX-Y', 'auto');
-            ga('send', 'pageview');
-        </script>
-</head>
-<body>
+We invite you to come and experience what we have to offer! We are open year round.
 
 We look forward to serving you!

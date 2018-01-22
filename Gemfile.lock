@@ -62,10 +62,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.7.0)
+  jekyll
   jekyll-menus (~> 0.6.0)
   jekyll-sitemap (~> 1.1)
   mini_magick (~> 4.8)
 
 BUNDLED WITH
-   1.16.1
+   1.16.0

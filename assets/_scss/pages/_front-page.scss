@@ -1,0 +1,104 @@
+.promo-circle-wrapper {
+  max-width: $global-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 4px solid mix($white, $primary-color, 10%);
+
+  .no-flexbox &::after{
+      display: table;
+      content: '';
+      clear: both;
+  }
+
+  @include breakpoint(medium){
+    justify-content: center;
+    border: none;
+  }
+
+  @include breakpoint(large) {
+    justify-content: space-around;
+  }
+}
+
+.promo-circle {
+  @include cinzel();
+  float: left;
+  z-index: 1;
+  display: flex;
+  margin: 4px;
+  width: calc(50% - 8px);
+  height: 230px;
+  background: $primary-color;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  outline: 4px solid mix($white, $primary-color, 10%);
+  border: 4px solid $white;
+
+  .no-flexbox &{
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  @include breakpoint(small only) {
+    &:nth-of-type(2) {
+      background-color: mix($black, $primary-color, 50%);
+    }
+
+    &:nth-of-type(3) {
+      background-color: mix($black, $primary-color, 50%);
+    }
+  }
+
+  @include breakpoint(medium) {
+    padding: 1.4rem;
+    margin: 1rem;
+    width: calc(40vw - 1rem);
+    height: calc(40vw - 1rem);
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 25vw;
+    max-height: 25vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 50%;
+    border: 4px solid white;
+    outline: none;
+    box-shadow: 0 0 0 6px $primary-color;
+  }
+
+  @include breakpoint(large){
+    width: calc(20vw - 1rem);
+    height: calc(20vw - 1rem);
+    margin: 2rem auto;
+    max-width: 230px;
+    max-height: 230px;
+  }
+}
+
+.promo-circle svg {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 95px;
+  max-height: 75px;
+  fill: white !important;
+
+  @include breakpoint(medium) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.google-map{
+  border-top: 8px solid $primary-color;
+  margin-bottom: -3rem; // Counteract the footer margin-top to make them flush.
+  font-size: 0; // A white space was put at the bottom of the map, put this in to remove it.
+}
