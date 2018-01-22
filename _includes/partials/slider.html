@@ -7,7 +7,7 @@
     {% assign slider_size = 'medium_slider' %}
 {% endif %}
 
-{% assign slider = site.slideshows | where: "path", page.slider %}
+{% assign slider = site.slideshows | where: "path", page.slider | first %}
 
 {% if slider %}
     <div class="slide-wrapper">
