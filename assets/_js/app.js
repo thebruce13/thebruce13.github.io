@@ -1,6 +1,15 @@
 (function ($) {
     $(document).foundation();
 
+    $("#js-contact").submit(function (e) {
+        e.preventDefault();
+
+        var $form = $(this);
+        $.post($form.attr("action"), $form.serialize()).then(function () {
+            alert("Thank you!");
+        });
+    });
+    
     $(document).ready(function () {
         $('#rooms').slick({
             dots: false,

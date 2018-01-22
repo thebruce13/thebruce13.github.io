@@ -34,15 +34,3 @@ layout: default
         <button type="submit" class="button booking-link">Submit</button>
     </form>
 </div>
-<script>
-    (function () {
-        $("#js-contact").submit(function (e) {
-            e.preventDefault();
-
-            var $form = $(this);
-            $.post($form.attr("action"), $form.serialize()).then(function () {
-                alert("Thank you!");
-            });
-        });
-    }(jQuery));
-</script>
