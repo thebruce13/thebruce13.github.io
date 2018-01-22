@@ -5,7 +5,7 @@ layout: default
 
 <div class="row"> 
     Email me
-    <form name="Contact" method="POST" netlify>
+    <form id="js-contact" name="Contact" method="POST" netlify>
         <label class="medium-6 columns">
             First Name
             <input type="text" name="first">
@@ -32,9 +32,15 @@ layout: default
         </label>
 
         <button type="submit" class="button booking-link">Submit</button>
-        
-        <input type="hidden" name="*reply" value="email">
-        <input type="hidden" name="*redirect" value="{{ page.url | absolute_url }}#form-submit" />
-        <input type="hidden" name="*subject" value="New Submission from Contact Us" />
     </form>
 </div>
+<script>
+    $("#js-contact").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
+</script>
