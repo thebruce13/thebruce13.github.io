@@ -1,6 +1,8 @@
 (function($) {
   $(document).foundation();
-
+  // Put in a pattern that will limit what people can put into fields for phone numbers.
+  Foundation.Abide.defaults.patterns['dashes_only'] = /^[0-9-]*$/;
+  
   $("#js-form").submit(function(e) {
     e.preventDefault();
     var $form = $(this);

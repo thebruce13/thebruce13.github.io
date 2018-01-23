@@ -29,7 +29,10 @@ layout: default
         <div class="row">
             <label class="medium-6 columns">
                 Phone
-                <input type="text" name="phone">
+                <input type="tel" pattern="dashes_only" name="phone">
+                <span class="form-error">
+                        Please fill out this field, only dashes and numbers are allowed.
+                    </span>
             </label>
 
             <label class="medium-6 columns">
