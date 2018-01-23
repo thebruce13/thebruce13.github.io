@@ -1,55 +1,63 @@
-(function ($) {
-    $(document).foundation();
+(function($) {
+  $(document).foundation();
 
-    $("#js-contact").submit(function (e) {
-        e.preventDefault();
-
-        var $form = $(this);
-        $.post($form.attr("action"), $form.serialize()).then(function () {
-            alert("Thank you!");
-        });
-    });
+  $("#js-form").submit(function(e) {
+    e.preventDefault();
+    var $form = $(this);
     
-    $(document).ready(function () {
-        $('#rooms').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            nextArrow: '<button class="slick-next-arrow" aria-label="Next rooms"><svg class="icon"><use xlink:href="#angle-right"></use></svg></button>',
-            prevArrow: '<button class="slick-previous-arrow" aria-label="Previous rooms"><svg class="icon"><use xlink:href="#angle-left"></use></svg></button>',
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+          // Hide the form and show the confirmation mesage. 
+    $form.hide();
+    $("#js-confirmation").show().css("height", $form.height());
     });
-    /*
+  });
+
+  var validate = function($form) {
+    
+  };
+
+  $(document).ready(function() {
+    $("#rooms").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      nextArrow:
+        '<button class="slick-next-arrow" aria-label="Next rooms"><svg class="icon"><use xlink:href="#angle-right"></use></svg></button>',
+      prevArrow:
+        '<button class="slick-previous-arrow" aria-label="Previous rooms"><svg class="icon"><use xlink:href="#angle-left"></use></svg></button>',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  });
+  /*
      $(document).ready(function() {
      $("#arriveDt").datepicker();
      $("#departDt").datepicker();
@@ -64,13 +72,13 @@
      return false;
      }
      */
-    // arriveDt
-    // departDt
-    /**
-     * Initialize Pikaday datepickers.
-     * @type {*}
-     */
-    /*
+  // arriveDt
+  // departDt
+  /**
+   * Initialize Pikaday datepickers.
+   * @type {*}
+   */
+  /*
     var checkinEl = document.getElementById("arriveDt"),
         checkoutEl = document.getElementById("departDt"),
         checkinPika = pikadayResponsive(checkinEl, {
@@ -86,7 +94,7 @@
             }
         });
 */
-// Check checkoutdate
+  // Check checkoutdate
   /*
     $(checkinEl).on('change-date', function (e, date) {
         // If check out date is before check in date
@@ -112,8 +120,10 @@
     });
 
 */
-    $('.hero-slick').slick({
-        nextArrow: '<button class="slick-next-arrow" aria-label="Next rooms"><svg class="icon"><use xlink:href="#angle-right"></use></svg></button>',
-        prevArrow: '<button class="slick-previous-arrow" aria-label="Previous rooms"><svg class="icon"><use xlink:href="#angle-left"></use></svg></button>',
-    });
+  $(".hero-slick").slick({
+    nextArrow:
+      '<button class="slick-next-arrow" aria-label="Next rooms"><svg class="icon"><use xlink:href="#angle-right"></use></svg></button>',
+    prevArrow:
+      '<button class="slick-previous-arrow" aria-label="Previous rooms"><svg class="icon"><use xlink:href="#angle-left"></use></svg></button>'
+  });
 })(jQuery);
