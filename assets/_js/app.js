@@ -4,17 +4,18 @@
   $("#js-form").submit(function(e) {
     e.preventDefault();
     var $form = $(this);
-    
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-          // Hide the form and show the confirmation mesage. 
-    $form.hide();
-    $("#js-confirmation").show().css("height", $form.height());
+    $("#js-form").on("formvalid.zf.abide", function(ev, frm) {
+      $.post($form.attr("action"), $form.serialize()).then(function() {
+        // Hide the form and show the confirmation mesage.
+        $form.hide();
+        $("#js-confirmation")
+          .show()
+          .css("height", $form.height());
+      });
     });
   });
 
-  var validate = function($form) {
-    
-  };
+  var validate = function($form) {};
 
   $(document).ready(function() {
     $("#rooms").slick({
