@@ -1,36 +1,54 @@
 ---
-layout: default
----
+layout: default 
+--- 
 {{ content }}
 
-<div class="row"> 
-    Email me
-    <form id="js-contact" name="Contact" method="POST" netlify>
-        <label class="medium-6 columns">
-            First Name
-            <input type="text" name="first">
-        </label>
+<div class="row">
+    {{page.title}}
+    <form id="js-form" name="Contact" data-abide novalidate netlify>
+        <div class="row">
+            <label class="medium-6 columns">
+                First <span class="alert">*</span>
+                <input type="text" name="first" required>
+                <span class="form-error">
+                    Please fill out this field.
+                </span>
+            </label>
 
-        <label class="medium-6 columns">
-            Last Name
-            <input type="text" name="phone">
-        </label>
+            <label class="medium-6 columns">
+                Last Name
+                <input type="text" name="phone" required>
+                <span class="form-error">
+                    Please fill out this field.
+                </span>
+            </label>
+        </div>
+        <div class="row">
+            <label class="medium-6 columns">
+                Phone
+                <input type="text" name="phone">
+            </label>
 
-        <label class="medium-6 columns">
-            Phone
-            <input type="text" name="phone">
-        </label>
-
-        <label class="medium-6 columns">
-            Email
-            <input type="email" name="email">
-        </label>
-
-        <label class="medium-12 columns">
-            Message
-            <textarea name="message"></textarea>
-        </label>
-
-        <button type="submit" class="button booking-link">Submit</button>
+            <label class="medium-6 columns">
+                Email
+                <input type="email" name="email" required>
+                <span class="form-error">
+                    Please fill out this field.
+                </span>
+            </label>
+        </div>
+        <div class="row">
+            <label class="medium-12 columns">
+                Message
+                <textarea name="message" required></textarea>
+                <span class="form-error">
+                    Please fill out this field.
+                </span>
+            </label>
+            <button type="submit" class="button booking-link">Submit</button>
+        </div>
     </form>
+    <div id="js-confirmation" class="confirmation">
+        Thank you for emailing us! We will get back to you as soon as possible.
+    </div>
 </div>
