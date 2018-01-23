@@ -5,7 +5,10 @@ layout: default
 
 <div class="row">
     {{page.title}}
-    <form id="js-form" name="Contact" data-abide novalidate netlify>
+    <form id="js-form" name="Contact" netlify-honeypot="bot-field" data-abide novalidate netlify>
+            <p class="hide">
+                    <label>Don’t fill this out: <input name="bot-field"></label>
+                  </p>
         <div class="row">
             <label class="medium-6 columns">
                 First <span class="alert">*</span>
