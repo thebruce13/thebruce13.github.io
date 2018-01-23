@@ -33,18 +33,18 @@ layout: default
         <div class="row">
             <label class="medium-6 columns">
                 Phone
-                <input type="tel" pattern="dashes_only" name="phone">
+                <input type="tel" pattern="phone" name="phone">
                 <span class="form-error">
-                    Please fill out this field, only dashes and numbers are allowed.
+                    Please fill out this field.
                 </span>
             </label>
 
             <label class="medium-6 columns">
                 Email
                 <span class="text-alert">*</span>
-                <input type="email" name="email" required>
+                <input type="email" pattern="email" name="email" required>
                 <span class="form-error">
-                    Please fill out this field.
+                    Please use a valid email.
                 </span>
             </label>
         </div>
