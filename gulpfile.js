@@ -157,6 +157,6 @@ function watch() {
     gulp.watch('assets/_scss/**/*.scss').on('all', gulp.series(sass, jekyllbuild));
     gulp.watch('assets/_svg/*.svg').on('all', gulp.series(svg, jekyllbuild));
     gulp.watch('assets/_js/**/*.js').on('all', gulp.series(javascript, jekyllbuild));
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/**/*.html']).on('all', gulp.series(jekyllbuild));
+    gulp.watch(['*.md','*.html', '_layouts/*.html', '_posts/*', '_includes/**/*.html']).on('all', gulp.series(jekyllbuild));
     gulp.watch('_site/*').on('all', gulp.series(browser.reload));
 }
