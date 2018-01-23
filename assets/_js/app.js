@@ -4,7 +4,7 @@
   $("#js-form").submit(function(e) {
     e.preventDefault();
     var $form = $(this);
-    $("#js-form").on("formvalid.zf.abide", function(ev, frm) {
+    $form.on("formvalid.zf.abide", function(ev, frm) {
       $.post($form.attr("action"), $form.serialize()).then(function() {
         // Hide the form and show the confirmation mesage.
         $form.hide();
