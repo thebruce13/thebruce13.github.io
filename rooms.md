@@ -3,10 +3,10 @@ layout: rooms
 title: Rooms
 slider: _slideshows/subpage.md
 menu:
-    header:
-        identifier: rooms
-        url: "/rooms"
-        weight: 2
+  header:
+    identifier: rooms
+    url: "/rooms"
+    weight: 2
 ---
 
 Our reservation policy is as follows:

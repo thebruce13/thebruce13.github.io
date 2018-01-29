@@ -1,6 +1,4 @@
 ---
-pages:
-- specials.html
 hide_body: false
 fields:
 - name: title

@@ -3,10 +3,10 @@ layout: page
 title: Amenities
 slider: _slideshows/subpage.md
 menu:
-    header:
-        identifier: amenities
-        url: "/amenities"
-        weight: 3
+  header:
+    identifier: amenities
+    url: "/amenities"
+    weight: 3
 ---
 
 - Outdoor heated swimming pool
