@@ -169,13 +169,26 @@ module Jekyll
 
         # Scale and crop
         image.combine_options do |i|
+          # Resize the image
           i.resize "#{gen_width}x#{gen_height}^"
           i.gravity "center"
           i.crop "#{crop_width}x#{crop_height}+0+0"
-          i.layers "Optimize"
           i.repage.+
-        end
 
+          #Optimize The image
+          i.quality 85
+          i.filter "Triangle"
+          i.strip # Remove extra data
+
+          # Get rid of transparency and layer info if its a jpg.
+          # This produces a better looking and smaller file.
+          if ext.downcase == ".jpg" || ext.downcase == ".jpeg"
+            i.layers "Flatten"
+          else
+            i.layers "Optimize"
+          end
+        end
+        
         image.write gen_dest_file
      end
 
